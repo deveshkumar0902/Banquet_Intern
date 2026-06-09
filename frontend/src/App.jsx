@@ -1,5 +1,7 @@
+import EnquiryForm from "./components/EnquiryForm";
 function App() {
   return (
+   <> 
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="text-center">
         <h1 className="text-5xl font-bold text-purple-700">
@@ -15,6 +17,8 @@ function App() {
         </button>
       </div>
     </div>
+    <EnquiryForm />
+  </>
   );
 }
 
