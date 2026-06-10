@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function EnquiryForm() {
   const {
     register,
@@ -9,27 +10,31 @@ function EnquiryForm() {
 
   const onSubmit = async (data) => {
     try {
-        const response = await fetch(
-            "http://localhost:5000/enquiry",
-            {
-                method: "POST",
-                headers: {
-                "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            }
-       );
+      const response = await fetch(
+        "http://localhost:5000/enquiry",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
-       const result = await response.json();
+      if (!response.ok) {
+        throw new Error("Submission failed");
+      }
 
-       alert("Enquiry submitted successfully!");
+      await response.json();
+
+      toast.success("Enquiry submitted successfully!");
     } catch (error) {
-      console.error(error);
-      alert("Failed to submit enquiry.");
+      toast.error("Failed to submit enquiry.");
     }
 };
 
   return (
+   <> 
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow"
@@ -153,6 +158,12 @@ function EnquiryForm() {
         Submit Enquiry
       </button>
     </form>
+
+    <ToastContainer 
+      position = "top-right"
+      autoClose = {3000}
+    />
+  </>
   );
 }
 
