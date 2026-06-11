@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`matches AboutUs snapshot 1`] = `
+<div>
+  <div
+    class="max-w-5xl mx-auto p-8"
+  >
+    <h1
+      class="text-4xl font-bold mb-6 text-purple-700"
+    >
+      About Us
+    </h1>
+    <div
+      class="bg-white p-6 rounded-lg shadow"
+    >
+      <p
+        class="text-lg text-gray-700 leading-relaxed"
+      >
+        Royal Banquet Hall is a premium venue for weddings, birthdays, anniversaries, and corporate events. We provide elegant décor, spacious halls, quality catering, and exceptional customer service to make every event memorable.
+      </p>
+    </div>
+  </div>
+</div>
+`;
