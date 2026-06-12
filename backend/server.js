@@ -3,12 +3,20 @@ const enquiryRouter = require('./routes/enquiry');
 const staticRouter = require('./routes/static');
 const express = require('express');
 const cors = require('cors');
+const expressrateLimit = require('express-rate-limit');
 const app = express();
 
 
 // Middleware
 app.use(cors({ origin: process.env.CORS_ORIGIN }));
 app.use(express.json());
+
+const limiter = expressrateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 10, // Limit each IP to 10 requests per windowMs
+    message: { error: "Too many requests, please try again after 15 minutes." }
+});
+app.use('*', limiter);
 
 // Minimal Health Route
 app.get('/health', (req, res) => {
