@@ -1,0 +1,37 @@
+{
+    "hero":{
+        "tagline":"Creating unforgettable experiences for your special day since 2010"
+    },
+    "story":{
+        "title":"Our Story",
+        "content":"Founded in 2010, our wedding planning company has been dedicated to creating unforgettable experiences for couples on their special day. With a passion for perfection and a commitment to excellence, we have helped countless couples bring their dream weddings to life. Our team of experienced planners works closely with each couple to understand their vision and ensure every detail is executed flawlessly. From intimate ceremonies to grand celebrations, we pride ourselves on delivering personalized service and exceptional results."
+    },
+    "highlights": [
+        { "text": "In-house catering with custom menu options" },
+        { "text": "State-of-the-art lighting and sound system" },
+        { "text": "Dedicated event coordinator for every booking" },
+        { "text": "Flexible layouts for 50 to 500 guests" },
+        { "text": "Ample on-site parking with valet service" },
+        { "text": "Eco-friendly practices and sustainable sourcing" }
+    ],
+    "team":{
+        "title":"Meet the Team",
+        "members":[
+            {
+                "name":"Emily Johnson",
+                "role":"Lead Event Planner",
+                "bio":"With over 15 years of experience in the wedding industry, Emily is known for her meticulous attention to detail and creative vision. She has a knack for turning even the most complex ideas into reality, ensuring every wedding she plans is unique and unforgettable."
+            },
+            {
+                "name":"Michael Smith",
+                "role":"Catering Manager",
+                "bio":"Michael oversees our in-house catering services, crafting custom menus that cater to every palate. His culinary expertise and commitment to quality ensure that every dish served at our events is both delicious and beautifully presented."
+            },
+            {
+                "name":"Sophia Lee",
+                "role":"Lighting and Sound Technician",
+                "bio":"Sophia is responsible for creating the perfect ambiance with our state-of-the-art lighting and sound system. Her technical skills and artistic eye help set the mood for every event, making sure that the atmosphere is just right for each couple's special day."
+            }
+        ]
+    }
+}
