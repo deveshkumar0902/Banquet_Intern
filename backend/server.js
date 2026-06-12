@@ -1,5 +1,6 @@
 require('dotenv').config();
 const enquiryRouter = require('./routes/enquiry');
+const staticRouter = require('./routes/static');
 const express = require('express');
 const cors = require('cors');
 const app = express();
@@ -17,6 +18,7 @@ app.get('/health', (req, res) => {
 
 // Routes
 app.use('/api/enquiries', enquiryRouter);
+app.use('/api', staticRouter);
 
 // Only start the server if this file is run directly (not via Jest)
 if (require.main === module) {
