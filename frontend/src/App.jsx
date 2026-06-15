@@ -4,11 +4,13 @@ import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Hero from "./components/Hero";
 import GalleryPage from "./pages/Gallery";
+import VenueShowcase from "./components/VenueShowcase";
 function Home() {
   return (
     <>
       <Hero />
       <EnquiryForm />
+      <VenueShowcase />
     </>
   );
 }
