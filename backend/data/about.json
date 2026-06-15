@@ -1,0 +1,28 @@
+{
+      "hero": {
+        "tagline": "Where Every Celebration Feels Like Home",
+        "description": "From weddings and receptions to engagements and family gatherings, Dev Marriage Hall is a place where memories are made, traditions are celebrated, and every event is treated as our own."
+      },
+      "story": {
+        "title": "Our Story",
+        "paragraph1": "Dev Marriage Hall was built with a simple idea – to give families a beautiful and comfortable space to celebrate their most important moments together.",
+        "paragraph2": "Over the years, we have been a part of countless weddings, receptions, birthdays, anniversaries, and community events. Every function has brought new stories, new smiles, and new relationships that have become a part of our journey.",
+        "paragraph3": "What makes us proud isn't just our venue; it's the trust families place in us. We understand how important these occasions are, which is why our team works closely with every client to make sure everything goes smoothly, from the first enquiry to the final farewell.",
+        "paragraph4": "Our goal is simple: to create a space where people can celebrate without stress and leave with memories they'll cherish for years."
+      },
+      "highlights": [
+        { "text": "Spacious hall suitable for both small and large gatherings" },
+        { "text": "Beautiful interiors that enhance every celebration" },
+        { "text": "Flexible event setups based on your requirements" },
+        { "text": "Dedicated support throughout your event" },
+        { "text": "Ample parking space for guests" },
+        { "text": "Catering and decoration support available" },
+        { "text": "Clean, well-maintained, and guest-friendly facilities" },
+        { "text": "Convenient location with easy accessibility" }
+      ],
+      "cta": {
+        "heading": "Let's Plan Your Celebration",
+        "description": "Whether you're planning a wedding, reception, engagement, anniversary, or any special gathering, we'd love to be a part of your journey.",
+        "buttonText": "Check Availability"
+      }
+    }

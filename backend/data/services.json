@@ -1,0 +1,64 @@
+[
+      {
+        "id": "wedding",
+        "title": "Wedding Celebration Package",
+        "tagline": "A complete venue solution for weddings and receptions, designed to make your special day smooth and stress-free.",
+        "features": [
+          "Spacious banquet hall",
+          "Stage setup",
+          "Guest seating arrangements",
+          "Decoration support",
+          "Catering coordination",
+          "Sound and lighting setup",
+          "Dedicated event assistance",
+          "Parking facilities"
+        ],
+        "priceNote": "Contact us for a customized quotation based on guest count and event requirements.",
+        "ctaText": "Get a Custom Quote"
+      },
+      {
+        "id": "engagement",
+        "title": "Engagement & Ring Ceremony Package",
+        "tagline": "Perfect for intimate celebrations with family and close friends.",
+        "features": [
+          "Decorated ceremony area",
+          "Seating arrangements",
+          "Lighting setup",
+          "Photography-friendly backdrop",
+          "Catering support",
+          "Event coordination"
+        ],
+        "priceNote": "Contact us for a personalized quote.",
+        "ctaText": "Get a Custom Quote"
+      },
+      {
+        "id": "birthday",
+        "title": "Birthday & Anniversary Package",
+        "tagline": "Celebrate milestones in style with customized arrangements and a vibrant atmosphere.",
+        "features": [
+          "Theme-based decoration options",
+          "Stage and cake area setup",
+          "Music and entertainment arrangements",
+          "Guest seating",  
+          "Catering support",
+          "Event assistance"
+        ],
+        "priceNote": "Packages available based on event size.",
+        "ctaText": "Get a Custom Quote"
+      },
+      {
+        "id": "corporate",
+        "title": "Corporate Event Package",
+        "tagline": "Professional venue arrangements for meetings, conferences, and business gatherings.",
+        "features": [
+          "Conference-style seating",
+          "Audio system support",
+          "Presentation area",
+          "Refreshment and catering options",
+          "Dedicated event management support",
+          "Parking facilities"
+        ],
+        "priceNote": "Contact us for corporate pricing.",
+        "ctaText": "Get a Custom Quote"
+      }
+    ]
