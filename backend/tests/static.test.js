@@ -12,7 +12,7 @@ const request = require('supertest');
         res.body.forEach(service => {
           expect(service).toHaveProperty('id');
           expect(service).toHaveProperty('title');
-          expect(service).toHaveProperty('description');
+          expect(service).toHaveProperty('tagline');
         });
       });
     });
@@ -29,7 +29,25 @@ const request = require('supertest');
         res.body.forEach(service => {
           expect(service).toHaveProperty('id');
           expect(service).toHaveProperty('title');
-          expect(service).toHaveProperty('description');
+          expect(service).toHaveProperty('tagline');
+        });
+      });
+    });
+
+    describe('GET /api/venues', () => {
+      it('should return 200 and an array of venues', async () => {
+        const res = await request(app).get('/api/venues');
+        
+        expect(res.statusCode).toBe(200);
+        expect(Array.isArray(res.body)).toBe(true);
+        expect(res.body.length).toBeGreaterThan(0);
+        
+        res.body.forEach(venue => {
+          expect(venue).toHaveProperty('id');
+          expect(venue).toHaveProperty('name');
+          expect(venue).toHaveProperty('capacity');
+          expect(venue).toHaveProperty('features');
+          expect(Array.isArray(venue.features)).toBe(true);
         });
       });
     });

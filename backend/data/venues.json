@@ -1,0 +1,41 @@
+[
+      {
+        "id": "grand-ballroom",
+        "name": "Grand Ballroom",
+        "capacity": 500,
+        "description": "Our most spacious indoor hall, perfect for grand weddings, receptions, and large corporate events.",
+        "image": "/images/venues/ballroom.jpg",
+        "features": [
+          "Centrally Air-Conditioned",
+          "In-built Grand Stage",
+          "State-of-the-art Sound & Lighting",
+          "Bride & Groom Changing Rooms"
+        ]
+      },
+      {
+        "id": "garden-lawn",
+        "name": "Royal Garden Lawn",
+        "capacity": 800,
+        "description": "A beautiful open-air outdoor setting ideal for winter weddings, evening receptions, and festive gatherings.",
+        "image": "/images/venues/lawn.jpg",
+        "features": [
+          "Lush Green Turf",
+          "Customizable Canopy options",
+          "Ample space for buffet stations",
+          "Dedicated entry gate"
+        ]
+      },
+      {
+        "id": "mini-hall",
+        "name": "Elegance Mini Hall",
+        "capacity": 150,
+        "description": "An intimate space perfect for engagements, ring ceremonies, birthday parties, and corporate meetings.",
+        "image": "/images/venues/mini.jpg",
+        "features": [
+          "Air-conditioned",
+          "Flexible seating layouts",
+          "Audio-Visual system with projector",
+          "Attached dining area"
+        ]
+      }
+    ]
