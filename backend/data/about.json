@@ -1,37 +1,28 @@
 {
-    "hero":{
-        "tagline":"Creating unforgettable experiences for your special day since 2010"
-    },
-    "story":{
-        "title":"Our Story",
-        "content":"Founded in 2010, our wedding planning company has been dedicated to creating unforgettable experiences for couples on their special day. With a passion for perfection and a commitment to excellence, we have helped countless couples bring their dream weddings to life. Our team of experienced planners works closely with each couple to understand their vision and ensure every detail is executed flawlessly. From intimate ceremonies to grand celebrations, we pride ourselves on delivering personalized service and exceptional results."
-    },
-    "highlights": [
-        { "text": "In-house catering with custom menu options" },
-        { "text": "State-of-the-art lighting and sound system" },
-        { "text": "Dedicated event coordinator for every booking" },
-        { "text": "Flexible layouts for 50 to 500 guests" },
-        { "text": "Ample on-site parking with valet service" },
-        { "text": "Eco-friendly practices and sustainable sourcing" }
-    ],
-    "team":{
-        "title":"Meet the Team",
-        "members":[
-            {
-                "name":"Emily Johnson",
-                "role":"Lead Event Planner",
-                "bio":"With over 15 years of experience in the wedding industry, Emily is known for her meticulous attention to detail and creative vision. She has a knack for turning even the most complex ideas into reality, ensuring every wedding she plans is unique and unforgettable."
-            },
-            {
-                "name":"Michael Smith",
-                "role":"Catering Manager",
-                "bio":"Michael oversees our in-house catering services, crafting custom menus that cater to every palate. His culinary expertise and commitment to quality ensure that every dish served at our events is both delicious and beautifully presented."
-            },
-            {
-                "name":"Sophia Lee",
-                "role":"Lighting and Sound Technician",
-                "bio":"Sophia is responsible for creating the perfect ambiance with our state-of-the-art lighting and sound system. Her technical skills and artistic eye help set the mood for every event, making sure that the atmosphere is just right for each couple's special day."
-            }
-        ]
+      "hero": {
+        "tagline": "Where Every Celebration Feels Like Home",
+        "description": "From weddings and receptions to engagements and family gatherings, Dev Marriage Hall is a place where memories are made, traditions are celebrated, and every event is treated as our own."
+      },
+      "story": {
+        "title": "Our Story",
+        "paragraph1": "Dev Marriage Hall was built with a simple idea – to give families a beautiful and comfortable space to celebrate their most important moments together.",
+        "paragraph2": "Over the years, we have been a part of countless weddings, receptions, birthdays, anniversaries, and community events. Every function has brought new stories, new smiles, and new relationships that have become a part of our journey.",
+        "paragraph3": "What makes us proud isn't just our venue; it's the trust families place in us. We understand how important these occasions are, which is why our team works closely with every client to make sure everything goes smoothly, from the first enquiry to the final farewell.",
+        "paragraph4": "Our goal is simple: to create a space where people can celebrate without stress and leave with memories they'll cherish for years."
+      },
+      "highlights": [
+        { "text": "Spacious hall suitable for both small and large gatherings" },
+        { "text": "Beautiful interiors that enhance every celebration" },
+        { "text": "Flexible event setups based on your requirements" },
+        { "text": "Dedicated support throughout your event" },
+        { "text": "Ample parking space for guests" },
+        { "text": "Catering and decoration support available" },
+        { "text": "Clean, well-maintained, and guest-friendly facilities" },
+        { "text": "Convenient location with easy accessibility" }
+      ],
+      "cta": {
+        "heading": "Let's Plan Your Celebration",
+        "description": "Whether you're planning a wedding, reception, engagement, anniversary, or any special gathering, we'd love to be a part of your journey.",
+        "buttonText": "Check Availability"
+      }
     }
-}
