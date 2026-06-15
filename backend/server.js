@@ -32,6 +32,7 @@ app.get('/health', (req, res) => {
 // Routes
 app.use('/api/enquiries', enquiryRouter);
 app.use('/api', staticRouter);
+app.use('/api/static', galleryRouter); // For backward compatibility
 
 // Only start the server if this file is run directly (not via Jest)
 if (require.main === module) {
