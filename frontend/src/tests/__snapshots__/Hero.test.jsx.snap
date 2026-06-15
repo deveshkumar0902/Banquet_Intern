@@ -3,11 +3,10 @@
 exports[`matches hero snapshot 1`] = `
 <div>
   <div
-    class="min-h-screen bg-cover bg-center flex items-center justify-center"
-    style="background-image: url("/src/assets/hero-bg.jpg");"
+    style="background-image: url("/src/assets/hero-bg.jpg"); background-size: cover; background-position: center center; background-repeat: no-repeat; min-height: 100vh; display: flex; align-items: center; justify-content: center;"
   >
     <div
-      class="bg-black/50 p-6 md:p-8 rounded-lg text-center mx-4 max-w-3xl"
+      class="bg-black/60 p-8 md:p-12 rounded-xl text-center mx-4 max-w-3xl"
     >
       <h1
         class="text-4xl md:text-6xl font-bold text-white"
