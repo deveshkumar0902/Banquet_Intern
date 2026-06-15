@@ -1,0 +1,54 @@
+[
+      {
+        "id": "wedding-silver",
+        "name": "Wedding Silver Package",
+        "description": "An affordable yet elegant package for intimate weddings up to 150 guests.",
+        "price": 15000,
+        "currency": "INR",
+        "inclusions": [
+          "Main Hall Rental (8 hours)",
+          "Welcome Refreshments for 150 guests",
+          "Bridal Suite",
+          "Stage Decoration (Basic)",
+          "Sound System (Basic)",
+          "Parking (Up to 50 vehicles)"
+        ],
+        "capacity": 150
+      },
+      {
+        "id": "wedding-gold",
+        "name": "Wedding Gold Package",
+        "description": "Our most popular package featuring premium amenities for medium-sized weddings.",
+        "price": 25000,
+        "currency": "INR",
+        "inclusions": [
+          "Main Hall Rental (12 hours)",
+          "Buffet Dinner (150 guests)",
+          "Bridal + Groom Suites",
+          "Stage Decoration (Floral)",
+          "Professional DJ & Sound System",
+          "Lighting Setup",
+          "Parking (Up to 100 vehicles)"
+        ],
+        "capacity": 250
+      },
+      {
+        "id": "wedding-diamond",
+        "name": "Wedding Diamond Package",
+        "description": "A luxury package with full-service arrangements for grand celebrations.",
+        "price": 45000,
+        "currency": "INR",
+        "inclusions": [
+          "Main Hall Rental (Full Day)",
+          "Buffet Dinner (300 guests)",
+          "Premium Bridal + Groom Suites",
+          "Elaborate Stage & Floral Decoration",
+          "Full Sound & Light System",
+          "Live Music/Band Arrangement",
+          "Photography Coordination",
+          "Event Manager Dedicated",
+          "Parking (Unlimited)"
+        ],
+        "capacity": 500
+      }
+    ]

@@ -17,4 +17,9 @@ router.get('/venues', (req, res) => {
     res.json(data)
 });
 
+router.get('/packages', (req, res) => {
+    const data = require(path.join(__dirname, '..', 'data', 'packages.json'));
+    res.json(data)
+});
+
 module.exports = router;

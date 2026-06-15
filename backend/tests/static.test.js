@@ -51,3 +51,22 @@ const request = require('supertest');
         });
       });
     });
+
+    describe('GET /api/packages', () => {
+      it('should return 200 and an array of packages', async () => {
+        const res = await request(app).get('/api/packages');
+        
+        expect(res.statusCode).toBe(200);
+        expect(Array.isArray(res.body)).toBe(true);
+        expect(res.body.length).toBeGreaterThan(0);
+        
+        res.body.forEach(pkg => {
+          expect(pkg).toHaveProperty('id');
+          expect(pkg).toHaveProperty('name');
+          expect(pkg).toHaveProperty('price');
+          expect(pkg).toHaveProperty('currency');
+          expect(pkg).toHaveProperty('inclusions');
+          expect(Array.isArray(pkg.inclusions)).toBe(true);
+        });
+      });
+    });
