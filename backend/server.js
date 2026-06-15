@@ -1,27 +1,14 @@
 require('dotenv').config();
 const enquiryRouter = require('./routes/enquiry');
 const staticRouter = require('./routes/static');
-const path = require('path');
 const express = require('express');
 const cors = require('cors');
-const expressrateLimit = require('express-rate-limit');
 const app = express();
-const galleryRouter = require('./routes/gallery');
 
 
 // Middleware
 app.use(cors({ origin: process.env.CORS_ORIGIN }));
 app.use(express.json());
-app.use('/gallery', express.static(path.join(__dirname, 'public', 'gallery')));
-
-const limiter = expressrateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 10, // Limit each IP to 10 requests per windowMs
-    message: { error: "Too many requests, please try again after 15 minutes." }
-});
-app.use('*', limiter);
-
-app.use('/api', galleryRouter);
 
 // Minimal Health Route
 app.get('/health', (req, res) => {
@@ -32,7 +19,7 @@ app.get('/health', (req, res) => {
 // Routes
 app.use('/api/enquiries', enquiryRouter);
 app.use('/api', staticRouter);
-app.use('/api/static', galleryRouter); // For backward compatibility
+app.use('/api', galleryRouter);
 
 // Only start the server if this file is run directly (not via Jest)
 if (require.main === module) {
