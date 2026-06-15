@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Hero from "./components/Hero";
+import GalleryPage from "./pages/Gallery";
 function Home() {
   return (
     <>
@@ -24,6 +25,10 @@ function App() {
         <Link to="/services">
           Services
         </Link>
+
+        <Link to="/gallery">
+          Gallery
+        </Link>
       </nav>
 
       <Routes>
@@ -40,6 +45,11 @@ function App() {
         <Route
           path="/services"
           element={<Services />}
+        />
+
+        <Route
+          path="/gallery"
+          element={<GalleryPage />}
         />
       </Routes>
     </BrowserRouter>
