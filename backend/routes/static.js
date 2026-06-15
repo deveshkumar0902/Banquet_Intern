@@ -12,4 +12,9 @@ router.get('/services', (req, res) => {
     res.json(data)
 });
 
+router.get('/venues', (req, res) => {
+    const data = require(path.join(__dirname, '..', 'data', 'venues.json'));
+    res.json(data)
+});
+
 module.exports = router;
