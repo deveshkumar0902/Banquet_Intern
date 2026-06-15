@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`matches Services snapshot 1`] = `
+<div>
+  <div
+    class="max-w-6xl mx-auto p-8"
+  >
+    <h1
+      class="text-4xl font-bold mb-8 text-purple-700"
+    >
+      Services
+    </h1>
+    <div
+      class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+    >
+      <div
+        class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+      >
+        <h2
+          class="text-xl font-semibold mb-3 text-purple-700"
+        >
+          Wedding Events
+        </h2>
+        <p
+          class="text-gray-600"
+        >
+          Complete wedding planning and banquet arrangements with premium décor.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+      >
+        <h2
+          class="text-xl font-semibold mb-3 text-purple-700"
+        >
+          Birthday Parties
+        </h2>
+        <p
+          class="text-gray-600"
+        >
+          Celebrate birthdays with customized themes and entertainment options.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+      >
+        <h2
+          class="text-xl font-semibold mb-3 text-purple-700"
+        >
+          Corporate Events
+        </h2>
+        <p
+          class="text-gray-600"
+        >
+          Professional setup for meetings, conferences, and business gatherings.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+      >
+        <h2
+          class="text-xl font-semibold mb-3 text-purple-700"
+        >
+          Anniversary Celebrations
+        </h2>
+        <p
+          class="text-gray-600"
+        >
+          Memorable anniversary events with elegant decorations and catering.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+      >
+        <h2
+          class="text-xl font-semibold mb-3 text-purple-700"
+        >
+          Catering Services
+        </h2>
+        <p
+          class="text-gray-600"
+        >
+          Delicious multi-cuisine catering options for every occasion.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+      >
+        <h2
+          class="text-xl font-semibold mb-3 text-purple-700"
+        >
+          Decoration Services
+        </h2>
+        <p
+          class="text-gray-600"
+        >
+          Premium stage, floral, and venue decoration for all event types.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
