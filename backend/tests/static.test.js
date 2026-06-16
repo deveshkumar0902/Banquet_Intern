@@ -87,3 +87,18 @@ const request = require('supertest');
         });
       });
     });
+
+    describe('GET /api/stats', () => {
+      it('should return 200 and a stats object with numeric values', async () => {
+        const res = await request(app).get('/api/stats');
+        
+        expect(res.statusCode).toBe(200);
+        expect(typeof res.body).toBe('object');
+        expect(res.body).toHaveProperty('eventsHosted');
+        expect(res.body).toHaveProperty('guestsServed');
+        expect(res.body).toHaveProperty('weddingsConducted');
+        expect(res.body).toHaveProperty('yearsInBusiness');
+        expect(typeof res.body.eventsHosted).toBe('number');
+        expect(typeof res.body.yearsInBusiness).toBe('number');
+      });
+    });

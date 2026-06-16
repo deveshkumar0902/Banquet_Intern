@@ -27,4 +27,9 @@ router.get('/testimonials', (req, res) => {
     res.json(data)
 });
 
+router.get('/stats', (req, res) => {
+    const data = require(path.join(__dirname, '..', 'data', 'stats.json'));
+    res.json(data)
+});
+
 module.exports = router;
