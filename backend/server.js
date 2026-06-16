@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const galleryRouter = require('./routes/gallery');
+const { version } = require('node:os');
 
 
 // Middleware
