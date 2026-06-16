@@ -172,7 +172,3 @@ README.md
 1. Preferred backend language (Node Express vs Python FastAPI). Adjust tasks accordingly.
 2. Final hosting providers (Vercel + Railway assumed). Change if the team prefers another platform.
 3. Need for an admin dashboard to view enquiries? Not in scope for the first month.
-
----
-
-*Plan generated using Hermes `plan` skill. Ready for execution via sub‑agents or manual work.*
