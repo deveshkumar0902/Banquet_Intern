@@ -1,0 +1,26 @@
+[
+    {
+    "id": "t1",
+        "name": "Neha & Arjun Sharma",
+        "eventType": "Wedding Reception",
+        "eventDate": "November 2025",
+        "rating": 5,
+        "quote": "Dev Marriage Hall made our wedding absolutely perfect! The staff was incredibly supportive."
+      },
+      {
+        "id": "t2",
+        "name": "Vikram Mehta",
+        "eventType": "Corporate Annual Gala",
+        "eventDate": "March 2026",
+        "rating": 5,
+        "quote": "Highly professional staff and clean, spacious facilities. The AV system and buffet service were flawless."
+      },
+      {
+        "id": "t3",
+        "name": "Ritu & Rajesh Verma",
+        "eventType": "Engagement Ceremony",
+        "eventDate": "January 2026",
+        "rating": 5,
+        "quote": "An elegant and welcoming environment. Perfect for our daughter's ring ceremony."
+    }
+]

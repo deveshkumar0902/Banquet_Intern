@@ -70,3 +70,20 @@ const request = require('supertest');
         });
       });
     });
+
+    describe('GET /api/testimonials', () => {
+      it('should return 200 and an array of testimonials', async () => {
+        const res = await request(app).get('/api/testimonials');
+        
+        expect(res.statusCode).toBe(200);
+        expect(Array.isArray(res.body)).toBe(true);
+        expect(res.body.length).toBeGreaterThan(0);
+        
+        res.body.forEach(t => {
+          expect(t).toHaveProperty('id');
+          expect(t).toHaveProperty('name');
+          expect(t).toHaveProperty('quote');
+          expect(t).toHaveProperty('rating');
+        });
+      });
+    });
