@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import GalleryPage from "./pages/Gallery";
 import VenueShowcase from "./components/VenueShowcase";
 import Packages from "./components/Packages";
+import Testimonials from "./components/Testimonials";
 function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ function Home() {
       <EnquiryForm />
       <VenueShowcase />
       <Packages />
+      <Testimonials />
     </>
   );
 }
