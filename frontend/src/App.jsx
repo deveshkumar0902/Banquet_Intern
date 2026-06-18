@@ -7,7 +7,6 @@ import GalleryPage from "./pages/Gallery";
 import VenueShowcase from "./components/VenueShowcase";
 import Packages from "./components/Packages";
 import Testimonials from "./components/Testimonials";
-import EventStats from "./components/EventStats";
 function Home() {
   return (
     <>
@@ -16,7 +15,6 @@ function Home() {
       <VenueShowcase />
       <Packages />
       <Testimonials />
-      <EventStats />
     </>
   );
 }
