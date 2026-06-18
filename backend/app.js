@@ -1,3 +1,9 @@
+// ⚠️  DEPRECATED — This file is the old legacy entry point.
+//     Use server.js instead:
+//        npm start     →  node server.js
+//        npm run dev   →  nodemon server.js
+//     (app.js only has a test route and is kept for reference.)
+
 const express = require('express');
 const app = express();
 const PORT = 3000;
