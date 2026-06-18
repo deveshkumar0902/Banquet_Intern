@@ -1,34 +1,54 @@
 import { useEffect, useState } from "react";
 
-const mockStats = [
-  {
-    label: "Events Hosted",
-    value: 500,
-  },
-  {
-    label: "Happy Guests",
-    value: 1000,
-  },
-  {
-    label: "Venues",
-    value: 50,
-  },
-  {
-    label: "Years Experience",
-    value: 10,
-  },
-];
-
 function EventStats() {
-  const [counts, setCounts] = useState(
-    mockStats.map(() => 0)
-  );
+  const [stats, setStats] = useState([]);
+  const [counts, setCounts] = useState([]);
 
   useEffect(() => {
+    fetch("http://localhost:3000/api/stats")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("STATS DATA:", data);
+        const statsData = [
+          {
+            label: "Events Hosted",
+            value: data.eventsHosted,
+          },
+          {
+            label: "Guests Served",
+            value: data.guestsServed,
+          },
+          {
+            label: "Weddings Conducted",
+            value: data.weddingsConducted,
+          },
+          {
+            label: "Corporate Events",
+            value: data.corporateEvents,
+          },
+          {
+            label: "Years In Business",
+            value: data.yearsInBusiness,
+          },
+          {
+            label: "Happy Clients",
+            value: data.happyClients,
+          },
+        ];
+
+        setStats(statsData);
+        setCounts(statsData.map(() => 0));
+      })
+      .catch((err) => console.error("FETCH ERROR:", err));
+  }, []);
+
+  useEffect(() => {
+    if (!stats.length) return;
+
     const interval = setInterval(() => {
       setCounts((prev) =>
         prev.map((count, index) => {
-          const target = mockStats[index].value;
+          const target = stats[index].value;
 
           if (count < target) {
             return Math.min(
@@ -43,7 +63,7 @@ function EventStats() {
     }, 30);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [stats]);
 
   return (
     <section className="py-12 bg-white">
@@ -52,8 +72,8 @@ function EventStats() {
       </h2>
 
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {mockStats.map((stat, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          {stats.map((stat, index) => (
             <div
               key={stat.label}
               className="bg-gray-100 rounded-xl shadow-md p-6 text-center"

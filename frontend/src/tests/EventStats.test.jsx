@@ -1,15 +1,29 @@
 import { render, screen } from "@testing-library/react";
-import { test, expect } from "vitest";
+import { test, expect, vi } from "vitest";
 import EventStats from "../components/EventStats";
 
-test("renders stats data", () => {
+test("renders stats data", async () => {
+  global.fetch = vi.fn(() =>
+    Promise.resolve({
+      json: () =>
+        Promise.resolve({
+          eventsHosted: 500,
+          guestsServed: 25000,
+          weddingsConducted: 300,
+          corporateEvents: 120,
+          yearsInBusiness: 15,
+          happyClients: 450,
+        }),
+    })
+  );
+
   render(<EventStats />);
 
   expect(
-    screen.getByText(/Events Hosted/i)
+    await screen.findByText(/Events Hosted/i)
   ).toBeInTheDocument();
 
   expect(
-    screen.getByText(/Happy Guests/i)
+    await screen.findByText(/Happy Clients/i)
   ).toBeInTheDocument();
 });
