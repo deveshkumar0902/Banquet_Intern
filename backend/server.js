@@ -5,7 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const galleryRouter = require('./routes/gallery');
-const contactRouter = require('./routes/contact');
+const { version } = require('node:os');
 
 
 // Middleware
@@ -22,7 +22,6 @@ app.get('/health', (req, res) => {
 app.use('/api/enquiries', enquiryRouter);
 app.use('/api', staticRouter);
 app.use('/api', galleryRouter);
-app.use('/api/contact', contactRouter);
 
 // Only start the server if this file is run directly (not via Jest)
 if (require.main === module) {
@@ -33,4 +32,3 @@ if (require.main === module) {
 }
 
 module.exports = app; // Export for testing
-
