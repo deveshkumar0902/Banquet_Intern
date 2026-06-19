@@ -20,7 +20,7 @@ function Home() {
 }
 function App() {
   return (
-    <BrowserRouter basename="/Banquet_Intern">
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <nav className="bg-purple-700 text-white p-4 flex gap-6">
         <Link to="/">Home</Link>
 
