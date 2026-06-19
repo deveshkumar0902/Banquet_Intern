@@ -1,4 +1,4 @@
-// ⚠️  DEPRECATED — This file is the old legacy entry point.
+// DEPRECATED — This file is the old legacy entry point.
 //     Use server.js instead:
 //        npm start     →  node server.js
 //        npm run dev   →  nodemon server.js
