@@ -32,6 +32,9 @@ jobs:
         run: npm run build
         working-directory: frontend
 
+      - name: Add .nojekyll (disable Jekyll on GitHub Pages)
+        run: touch frontend/dist/.nojekyll
+
       - uses: actions/configure-pages@v4
 
       - name: Upload artifact
