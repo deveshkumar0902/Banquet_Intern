@@ -20,7 +20,7 @@ function Home() {
 }
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Banquet_Intern">
       <nav className="bg-purple-700 text-white p-4 flex gap-6">
         <Link to="/">Home</Link>
 
