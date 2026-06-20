@@ -15,7 +15,7 @@ function VenueShowcase() {
   const [venues, setVenues] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/venues")
+    fetch("http://localhost:5000/api/venues")
         .then((res) => {
         console.log("Status:", res.status);
         return res.json();
