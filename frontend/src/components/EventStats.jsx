@@ -5,7 +5,7 @@ function EventStats() {
   const [counts, setCounts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/stats")
+    fetch("http://localhost:5000/api/stats")
       .then((res) => res.json())
       .then((data) => {
         console.log("STATS DATA:", data);
