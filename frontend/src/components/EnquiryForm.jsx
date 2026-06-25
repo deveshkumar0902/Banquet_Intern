@@ -11,7 +11,7 @@ function EnquiryForm() {
   const onSubmit = async (data) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/enquiry",
+        "http://localhost:5000/api/enquiries",
         {
           method: "POST",
           headers: {
