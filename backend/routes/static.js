@@ -32,4 +32,9 @@ router.get('/stats', (req, res) => {
     res.json(data)
 });
 
+router.get('/faqs', (req, res) => {
+    const data = require(path.join(__dirname, '..', 'data', 'faqs.json'));
+    res.json(data)
+})
+
 module.exports = router;

@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capacity of our banquet hall?",
+        "answer": "Our banquet hall can accommodate up to 500 guests comfortably with flexible seating arrangements."
+    },
+    {
+        "id": 2,
+        "question": "Do you provide catering services?",
+        "answer": "Yes, we offer a variety of catering packages to suit different tastes and budgets. Our in-house catering team can customize menus based on your preferences including vegetarian, non-vegetarian and Jain Food options."
+    },
+    {
+        "id": 3,
+        "question": "Is there parking available for guests?",
+        "answer": "Yes, we have ample parking space available for our guests. Valet parking services are also available upon request."
+    },
+    {
+        "id": 4,
+        "question": "Can we decorate the banquet hall according to our theme?",
+        "answer": "Absolutely! We encourage our clients to personalize the banquet hall with their own decorations. Our team can assist with setup and provide recommendations for vendors if needed."
+    },
+    {
+        "id": 5,
+        "question": "What is the cancellation policy?",
+        "answer": "Our cancellation policy allows for a full refund if canceled at least 30 days prior to the event date. Cancellations made within 30 days of the event may incur a partial fee. Please refer to our terms and conditions for more details."
+    }
+]
