@@ -6,6 +6,7 @@ const path = require('path');
 const xlsx = require('xlsx');
 const { Mutex } = require('async-mutex');
 const transporter = require('../mail');
+const config = require("../config");
 
 // ---------- Validation Schema ----------
 const contactSchema = Joi.object({
@@ -89,7 +90,7 @@ router.post('/', async (req, res) => {
     );
 
     await transporter.sendMail({
-      from: `Banquet Hall <${process.env.FROM_EMAIL}>`,
+      from: `Banquet Hall <${config.FROM_EMAIL}>`,
       to: value.email,
       subject: `Contact Form Submission: ${value.subject}`,
       html
