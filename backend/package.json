@@ -6,7 +6,8 @@
       "scripts": {
             "dev": "nodemon server.js",
             "start": "node server.js",
-            "test": "jest"
+            "test": "jest",
+            "docs": "cat README.md"
       },
       "dependencies": {
             "async-mutex": "^0.4.0",
