@@ -1,4 +1,4 @@
-require('dotenv').config();
+const config = require('./config');
 const enquiryRouter = require('./routes/enquiry');
 const staticRouter = require('./routes/static');
 const express = require('express');
@@ -9,7 +9,7 @@ const contactRouter = require('./routes/contact');
 
 
 // Middleware
-app.use(cors({ origin: process.env.CORS_ORIGIN }));
+app.use(cors({ origin: config.CORS_ORIGIN }));
 app.use(express.json());
 
 // Minimal Health Route
@@ -26,7 +26,7 @@ app.use('/api/contact', contactRouter);
 
 // Only start the server if this file is run directly (not via Jest)
 if (require.main === module) {
-    const PORT = process.env.PORT || 3000;
+    const PORT = config.PORT;
     app.listen(PORT, () => {
         console.log(`Server running on port ${PORT}`);
     });
