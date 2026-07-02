@@ -8,6 +8,9 @@ import VenueShowcase from "./components/VenueShowcase";
 import Packages from "./components/Packages";
 import Testimonials from "./components/Testimonials";
 import EventStats from "./components/EventStats";
+import Contact from "./pages/Contact";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Home() {
   return (
     <>
@@ -22,6 +25,7 @@ function Home() {
 }
 function App() {
   return (
+    <>
     <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <nav className="bg-purple-700 text-white p-4 flex gap-6">
         <Link to="/">Home</Link>
@@ -36,6 +40,10 @@ function App() {
 
         <Link to="/gallery">
           Gallery
+        </Link>
+
+        <Link to="/contact">
+          Contact
         </Link>
       </nav>
 
@@ -59,8 +67,19 @@ function App() {
           path="/gallery"
           element={<GalleryPage />}
         />
+
+        <Route
+          path="/contact"
+          element={<Contact />}
+        />
       </Routes>
     </BrowserRouter>
+
+    <ToastContainer
+          position="top-right"
+          autoClose={3000}
+    />
+   </> 
   );
 }
 
