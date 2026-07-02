@@ -160,10 +160,7 @@ function EnquiryForm() {
       </button>
     </form>
 
-    <ToastContainer 
-      position = "top-right"
-      autoClose = {3000}
-    />
+    
   </>
   );
 }
