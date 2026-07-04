@@ -11,6 +11,7 @@ import EventStats from "./components/EventStats";
 import Contact from "./pages/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import FAQAccordion from "./components/FAQAccordion";
 function Home() {
   return (
     <>
@@ -20,6 +21,7 @@ function Home() {
       <Packages />
       <Testimonials />
       <EventStats />
+      <FAQAccordion />
     </>
   );
 }
