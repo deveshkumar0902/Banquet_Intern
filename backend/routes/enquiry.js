@@ -6,12 +6,13 @@ const path = require('path');
 const xlsx = require('xlsx');
 const { Mutex } = require('async-mutex');
 const transporter = require('../mail');
+const config = require('../config');
 
 // ---------- Validation Schema ----------
 const enquirySchema = Joi.object({
   name: Joi.string().min(2).max(100).required(),
   email: Joi.string().email().required(),
-  phone: Joi.string().pattern(/^[0-9+\-() *]{7,20}$/).required(),
+  phone: Joi.string().pattern(/^[0-9+() *\-]+$/).required(),
   eventType: Joi.string().required(),
   eventDate: Joi.date().iso().required(),
   guests: Joi.number().integer().min(1).required(),
@@ -31,7 +32,7 @@ async function saveEnquiryToExcel(enquiry) {
     } else {
       workbook = xlsx.utils.book_new();
       sheet = xlsx.utils.aoa_to_sheet([
-        ['Timestamp', 'Name', 'Mobile Number', 'Email Address', 'Event Type', 'Event Date', 'No of people', 'Message']
+        ['Timestamp', 'Name', 'Mobile Number', 'Email Address', 'Event Type', 'Event Date', 'No of People', 'Message']
       ]);
       xlsx.utils.book_append_sheet(workbook, sheet, 'Enquiries');
     }
@@ -60,7 +61,7 @@ async function saveEnquiryToExcel(enquiry) {
 function renderTemplate(templatePath, vars) {
   let tmpl = fs.readFileSync(templatePath, 'utf8');
   for (const [key, value] of Object.entries(vars)) {
-    tmpl = tmpl.split(`{{${key}}}`).join(value);
+    tmpl = tmpl.split(`{${key}}`).join(value);
   }
   return tmpl;
 }
@@ -91,15 +92,13 @@ router.post('/', async (req, res) => {
         message: value.message || '(none)'
       }
     );
-    
-    const config = require('../config');
 
     await transporter.sendMail({
-      from: `Banquet Hall <${process.env.FROM_EMAIL}>`,
-      to: value.email,
-      subject: 'Your Banquet Hall Enquiry',
-      html
-    });
+          from: `Banquet Hall <${config.FROM_EMAIL}>`,
+          to: value.email,
+          subject: 'Your Banquet Hall Enquiry',
+          html
+        });
 
     return res.status(201).json({
       status: 'success',
