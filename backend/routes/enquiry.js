@@ -31,7 +31,7 @@ async function saveEnquiryToExcel(enquiry) {
     } else {
       workbook = xlsx.utils.book_new();
       sheet = xlsx.utils.aoa_to_sheet([
-        ['Timestamp', 'Name', 'Email', 'Phone', 'Event Type', 'Event Date', 'Guests', 'Message']
+        ['Timestamp', 'Name', 'Mobile Number', 'Email Address', 'Event Type', 'Event Date', 'No of people', 'Message']
       ]);
       xlsx.utils.book_append_sheet(workbook, sheet, 'Enquiries');
     }
@@ -41,8 +41,8 @@ async function saveEnquiryToExcel(enquiry) {
     rows.push([
       timestamp,
       enquiry.name,
-      enquiry.email,
       enquiry.phone,
+      enquiry.email,
       enquiry.eventType,
       enquiry.eventDate,
       enquiry.guests,
@@ -83,14 +83,16 @@ router.post('/', async (req, res) => {
       path.join(__dirname, '..', 'templates', 'enquiry-confirm.html'),
       {
         name: value.name,
+        phone: value.phone,
+        email: value.email,
         eventType: value.eventType,
         eventDate: value.eventDate,
         guests: value.guests,
-        phone: value.phone,
-        email: value.email,
         message: value.message || '(none)'
       }
     );
+    
+    const config = require('../config');
 
     await transporter.sendMail({
       from: `Banquet Hall <${process.env.FROM_EMAIL}>`,
