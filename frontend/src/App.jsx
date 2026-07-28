@@ -1,87 +1,38 @@
-import EnquiryForm from "./components/EnquiryForm";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
-import Hero from "./components/Hero";
 import GalleryPage from "./pages/Gallery";
-import VenueShowcase from "./components/VenueShowcase";
-import Packages from "./components/Packages";
-import Testimonials from "./components/Testimonials";
-import EventStats from "./components/EventStats";
 import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import FAQAccordion from "./components/FAQAccordion";
-function Home() {
-  return (
-    <>
-      <Hero />
-      <EnquiryForm />
-      <VenueShowcase />
-      <Packages />
-      <Testimonials />
-      <EventStats />
-      <FAQAccordion />
-    </>
-  );
-}
+
 function App() {
   return (
     <>
-    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
-      <nav className="bg-purple-700 text-white p-4 flex gap-6">
-        <Link to="/">Home</Link>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+        <Header />
 
-        <Link to="/about">
-          About Us
-        </Link>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
 
-        <Link to="/services">
-          Services
-        </Link>
+        <Footer />
+      </BrowserRouter>
 
-        <Link to="/gallery">
-          Gallery
-        </Link>
-
-        <Link to="/contact">
-          Contact
-        </Link>
-      </nav>
-
-      <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
-
-        <Route
-          path="/about"
-          element={<AboutUs />}
-        />
-
-        <Route
-          path="/services"
-          element={<Services />}
-        />
-
-        <Route
-          path="/gallery"
-          element={<GalleryPage />}
-        />
-
-        <Route
-          path="/contact"
-          element={<Contact />}
-        />
-      </Routes>
-    </BrowserRouter>
-
-    <ToastContainer
-          position="top-right"
-          autoClose={3000}
-    />
-   </> 
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+      />
+    </>
   );
 }
 

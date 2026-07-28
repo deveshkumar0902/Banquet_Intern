@@ -1,0 +1,105 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Layout Components > matches Container snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="max-w-7xl mx-auto px-6"
+  >
+    <p>
+      Test Content
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Layout Components > matches Footer snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="bg-gray-900 text-white"
+  >
+    <div
+      class="max-w-7xl mx-auto px-6"
+    >
+      <div
+        class="flex flex-col items-center justify-center py-8"
+      >
+        <h2
+          class="text-xl font-semibold"
+        >
+          Royal Banquet Hall
+        </h2>
+        <p
+          class="mt-2 text-sm text-gray-300"
+        >
+          © 2026 Royal Banquet Hall. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
+
+exports[`Layout Components > matches Header snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="sticky top-0 z-50 bg-white shadow-md"
+  >
+    <div
+      class="max-w-7xl mx-auto px-6"
+    >
+      <nav
+        class="flex items-center justify-between h-20"
+      >
+        <a
+          class="text-2xl font-bold text-[#7C3AED]"
+          data-discover="true"
+          href="/"
+        >
+          Royal Banquet Hall
+        </a>
+        <div
+          class="hidden md:flex items-center gap-8 text-gray-700 font-medium"
+        >
+          <a
+            data-discover="true"
+            href="/"
+          >
+            Home
+          </a>
+          <a
+            data-discover="true"
+            href="/about"
+          >
+            About
+          </a>
+          <a
+            data-discover="true"
+            href="/services"
+          >
+            Services
+          </a>
+          <a
+            data-discover="true"
+            href="/gallery"
+          >
+            Gallery
+          </a>
+          <a
+            data-discover="true"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </div>
+        <a
+          class="rounded-full bg-[#7C3AED] px-6 py-3 text-white font-medium hover:bg-[#6D28D9] transition"
+          data-discover="true"
+          href="/contact"
+        >
+          Enquire Now
+        </a>
+      </nav>
+    </div>
+  </header>
+</DocumentFragment>
+`;
