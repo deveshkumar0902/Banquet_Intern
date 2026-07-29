@@ -5,12 +5,13 @@ import Packages from "../components/Packages";
 import Testimonials from "../components/Testimonials";
 import EventStats from "../components/EventStats";
 import FAQAccordion from "../components/FAQAccordion";
+import AboutSection from "../components/AboutSection";
 
 function Home() {
   return (
     <>
       <Hero />
-      <EnquiryForm />
+      <AboutSection />
       <VenueShowcase />
       <Packages />
       <Testimonials />
