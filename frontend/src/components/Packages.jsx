@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const mockPackages = [
   {
     id: "wedding-silver",
@@ -56,47 +54,181 @@ const mockPackages = [
 ];
 
 function Packages() {
-  const [packages] = useState(mockPackages);
-
   return (
-    <section className="py-12 bg-gray-100">
-      <h2 className="text-4xl font-bold text-center text-purple-700 mb-10">
-        Packages
-      </h2>
+    <section
+      id="packages"
+      className="py-24 bg-gray-50"
+    >
+      <div className="max-w-7xl mx-auto px-6">
 
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {packages.map((pkg) => (
-          <div
-            key={pkg.id}
-            className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-          >
-            <h3 className="text-2xl font-bold text-purple-700 mb-2">
-              {pkg.name}
-            </h3>
+        {/* Section Heading */}
 
-            <p className="text-2xl font-semibold text-green-600 mb-3">
-              ₹ {pkg.price.toLocaleString()}
-            </p>
+        <div className="text-center mb-16">
 
-            <p className="text-gray-600 mb-3">
-              {pkg.description}
-            </p>
+          <p className="uppercase tracking-[4px] text-purple-600 font-semibold">
+            Choose Your Package
+          </p>
 
-            <p className="font-medium text-gray-800 mb-4">
-              Capacity: {pkg.capacity} Guests
-            </p>
+          <h2 className="text-5xl font-bold text-gray-900 mt-3">
+            Wedding Packages
+          </h2>
 
-            <h4 className="font-semibold text-gray-800 mb-2">
-              Inclusions:
-            </h4>
+          <p className="text-gray-600 max-w-2xl mx-auto mt-5 leading-7">
+            Elegant packages designed to make your celebration
+            memorable, comfortable and completely stress-free.
+          </p>
 
-            <ul className="list-disc list-inside text-gray-600 space-y-1">
-              {pkg.inclusions.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        </div>
+
+        {/* Package Cards */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {mockPackages.map((pkg, index) => (
+
+            <div
+              key={pkg.id}
+              className={`relative bg-white rounded-3xl overflow-hidden shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+                ${
+                  index === 1
+                    ? "border-2 border-purple-500"
+                    : "border border-gray-100"
+                }`}
+            >
+
+              {/* Popular Badge */}
+
+              {index === 1 && (
+                <div className="absolute top-5 right-5 z-10 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full">
+                  Most Popular
+                </div>
+              )}
+
+              {/* Top Image Area */}
+
+              <div
+                className={`h-48 flex items-center justify-center
+                  ${
+                    index === 0
+                      ? "bg-gradient-to-br from-gray-700 to-gray-900"
+                      : index === 1
+                      ? "bg-gradient-to-br from-purple-600 to-purple-900"
+                      : "bg-gradient-to-br from-gray-900 to-black"
+                  }`}
+              >
+
+                <div className="text-center text-white">
+
+                  <div className="text-5xl mb-3">
+                    {index === 0
+                      ? "💍"
+                      : index === 1
+                      ? "👑"
+                      : "✨"}
+                  </div>
+
+                  <p className="uppercase tracking-[3px] text-sm opacity-80">
+                    {index === 0
+                      ? "Elegant"
+                      : index === 1
+                      ? "Premium"
+                      : "Luxury"}
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* Card Content */}
+
+              <div className="p-8">
+
+                <h3 className="text-2xl font-bold text-gray-900">
+                  {pkg.name}
+                </h3>
+
+                {/* Price */}
+
+                <div className="mt-5 flex items-baseline gap-2">
+
+                  <span className="text-3xl font-bold text-[#7C3AED]">
+                    ₹{pkg.price.toLocaleString()}
+                  </span>
+
+                  <span className="text-gray-500">
+                    / package
+                  </span>
+
+                </div>
+
+                {/* Description */}
+
+                <p className="mt-5 text-gray-600 leading-7">
+                  {pkg.description}
+                </p>
+
+                {/* Capacity */}
+
+                <div className="mt-6 bg-purple-50 rounded-xl px-4 py-3">
+
+                  <p className="font-semibold text-purple-700">
+                    👥 Capacity: {pkg.capacity} Guests
+                  </p>
+
+                </div>
+
+                {/* Features */}
+
+                <div className="mt-7">
+
+                  <h4 className="font-bold text-gray-900 mb-4">
+                    What's Included
+                  </h4>
+
+                  <ul className="space-y-3">
+
+                    {pkg.inclusions.map((item, itemIndex) => (
+
+                      <li
+                        key={itemIndex}
+                        className="flex items-start gap-3 text-gray-600"
+                      >
+
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5">
+                          ✓
+                        </span>
+
+                        <span>
+                          {item}
+                        </span>
+
+                      </li>
+
+                    ))}
+
+                  </ul>
+
+                </div>
+
+                {/* Button */}
+
+                <a
+                  href="#enquiry-form"
+                  className="block text-center mt-8 w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white py-3.5 rounded-full font-semibold transition"
+                >
+                  Enquire Now
+                </a>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
       </div>
     </section>
   );

@@ -3,189 +3,558 @@
 exports[`Packages component matches snapshot 1`] = `
 <div>
   <section
-    class="py-12 bg-gray-100"
+    class="py-24 bg-gray-50"
+    id="packages"
   >
-    <h2
-      class="text-4xl font-bold text-center text-purple-700 mb-10"
-    >
-      Packages
-    </h2>
     <div
-      class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      class="max-w-7xl mx-auto px-6"
     >
       <div
-        class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        class="text-center mb-16"
       >
-        <h3
-          class="text-2xl font-bold text-purple-700 mb-2"
-        >
-          Wedding Silver Package
-        </h3>
         <p
-          class="text-2xl font-semibold text-green-600 mb-3"
+          class="uppercase tracking-[4px] text-purple-600 font-semibold"
         >
-          ₹ 
-          15,000
+          Choose Your Package
         </p>
+        <h2
+          class="text-5xl font-bold text-gray-900 mt-3"
+        >
+          Wedding Packages
+        </h2>
         <p
-          class="text-gray-600 mb-3"
+          class="text-gray-600 max-w-2xl mx-auto mt-5 leading-7"
         >
-          An affordable yet elegant package for intimate weddings up to 150 guests.
+          Elegant packages designed to make your celebration memorable, comfortable and completely stress-free.
         </p>
-        <p
-          class="font-medium text-gray-800 mb-4"
-        >
-          Capacity: 
-          150
-           Guests
-        </p>
-        <h4
-          class="font-semibold text-gray-800 mb-2"
-        >
-          Inclusions:
-        </h4>
-        <ul
-          class="list-disc list-inside text-gray-600 space-y-1"
-        >
-          <li>
-            Main Hall Rental (8 hours)
-          </li>
-          <li>
-            Welcome Refreshments for 150 guests
-          </li>
-          <li>
-            Bridal Suite
-          </li>
-          <li>
-            Stage Decoration (Basic)
-          </li>
-          <li>
-            Sound System (Basic)
-          </li>
-          <li>
-            Parking (Up to 50 vehicles)
-          </li>
-        </ul>
       </div>
       <div
-        class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
-        <h3
-          class="text-2xl font-bold text-purple-700 mb-2"
+        <div
+          class="relative bg-white rounded-3xl overflow-hidden shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+                border border-gray-100"
         >
-          Wedding Gold Package
-        </h3>
-        <p
-          class="text-2xl font-semibold text-green-600 mb-3"
+          <div
+            class="h-48 flex items-center justify-center
+                  bg-gradient-to-br from-gray-700 to-gray-900"
+          >
+            <div
+              class="text-center text-white"
+            >
+              <div
+                class="text-5xl mb-3"
+              >
+                💍
+              </div>
+              <p
+                class="uppercase tracking-[3px] text-sm opacity-80"
+              >
+                Elegant
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-8"
+          >
+            <h3
+              class="text-2xl font-bold text-gray-900"
+            >
+              Wedding Silver Package
+            </h3>
+            <div
+              class="mt-5 flex items-baseline gap-2"
+            >
+              <span
+                class="text-3xl font-bold text-[#7C3AED]"
+              >
+                ₹
+                15,000
+              </span>
+              <span
+                class="text-gray-500"
+              >
+                / package
+              </span>
+            </div>
+            <p
+              class="mt-5 text-gray-600 leading-7"
+            >
+              An affordable yet elegant package for intimate weddings up to 150 guests.
+            </p>
+            <div
+              class="mt-6 bg-purple-50 rounded-xl px-4 py-3"
+            >
+              <p
+                class="font-semibold text-purple-700"
+              >
+                👥 Capacity: 
+                150
+                 Guests
+              </p>
+            </div>
+            <div
+              class="mt-7"
+            >
+              <h4
+                class="font-bold text-gray-900 mb-4"
+              >
+                What's Included
+              </h4>
+              <ul
+                class="space-y-3"
+              >
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Main Hall Rental (8 hours)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Welcome Refreshments for 150 guests
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Bridal Suite
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Stage Decoration (Basic)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Sound System (Basic)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Parking (Up to 50 vehicles)
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="block text-center mt-8 w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white py-3.5 rounded-full font-semibold transition"
+              href="#enquiry-form"
+            >
+              Enquire Now
+            </a>
+          </div>
+        </div>
+        <div
+          class="relative bg-white rounded-3xl overflow-hidden shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+                border-2 border-purple-500"
         >
-          ₹ 
-          25,000
-        </p>
-        <p
-          class="text-gray-600 mb-3"
+          <div
+            class="absolute top-5 right-5 z-10 bg-[#7C3AED] text-white text-sm font-semibold px-4 py-2 rounded-full"
+          >
+            Most Popular
+          </div>
+          <div
+            class="h-48 flex items-center justify-center
+                  bg-gradient-to-br from-purple-600 to-purple-900"
+          >
+            <div
+              class="text-center text-white"
+            >
+              <div
+                class="text-5xl mb-3"
+              >
+                👑
+              </div>
+              <p
+                class="uppercase tracking-[3px] text-sm opacity-80"
+              >
+                Premium
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-8"
+          >
+            <h3
+              class="text-2xl font-bold text-gray-900"
+            >
+              Wedding Gold Package
+            </h3>
+            <div
+              class="mt-5 flex items-baseline gap-2"
+            >
+              <span
+                class="text-3xl font-bold text-[#7C3AED]"
+              >
+                ₹
+                25,000
+              </span>
+              <span
+                class="text-gray-500"
+              >
+                / package
+              </span>
+            </div>
+            <p
+              class="mt-5 text-gray-600 leading-7"
+            >
+              Our most popular package featuring premium amenities for medium-sized weddings.
+            </p>
+            <div
+              class="mt-6 bg-purple-50 rounded-xl px-4 py-3"
+            >
+              <p
+                class="font-semibold text-purple-700"
+              >
+                👥 Capacity: 
+                250
+                 Guests
+              </p>
+            </div>
+            <div
+              class="mt-7"
+            >
+              <h4
+                class="font-bold text-gray-900 mb-4"
+              >
+                What's Included
+              </h4>
+              <ul
+                class="space-y-3"
+              >
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Main Hall Rental (12 hours)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Buffet Dinner (150 guests)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Bridal + Groom Suites
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Stage Decoration (Floral)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Professional DJ & Sound System
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Lighting Setup
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Parking (Up to 100 vehicles)
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="block text-center mt-8 w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white py-3.5 rounded-full font-semibold transition"
+              href="#enquiry-form"
+            >
+              Enquire Now
+            </a>
+          </div>
+        </div>
+        <div
+          class="relative bg-white rounded-3xl overflow-hidden shadow-lg
+                transition-all duration-300
+                hover:-translate-y-2 hover:shadow-2xl
+                border border-gray-100"
         >
-          Our most popular package featuring premium amenities for medium-sized weddings.
-        </p>
-        <p
-          class="font-medium text-gray-800 mb-4"
-        >
-          Capacity: 
-          250
-           Guests
-        </p>
-        <h4
-          class="font-semibold text-gray-800 mb-2"
-        >
-          Inclusions:
-        </h4>
-        <ul
-          class="list-disc list-inside text-gray-600 space-y-1"
-        >
-          <li>
-            Main Hall Rental (12 hours)
-          </li>
-          <li>
-            Buffet Dinner (150 guests)
-          </li>
-          <li>
-            Bridal + Groom Suites
-          </li>
-          <li>
-            Stage Decoration (Floral)
-          </li>
-          <li>
-            Professional DJ & Sound System
-          </li>
-          <li>
-            Lighting Setup
-          </li>
-          <li>
-            Parking (Up to 100 vehicles)
-          </li>
-        </ul>
-      </div>
-      <div
-        class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
-      >
-        <h3
-          class="text-2xl font-bold text-purple-700 mb-2"
-        >
-          Wedding Diamond Package
-        </h3>
-        <p
-          class="text-2xl font-semibold text-green-600 mb-3"
-        >
-          ₹ 
-          45,000
-        </p>
-        <p
-          class="text-gray-600 mb-3"
-        >
-          A luxury package with full-service arrangements for grand celebrations.
-        </p>
-        <p
-          class="font-medium text-gray-800 mb-4"
-        >
-          Capacity: 
-          500
-           Guests
-        </p>
-        <h4
-          class="font-semibold text-gray-800 mb-2"
-        >
-          Inclusions:
-        </h4>
-        <ul
-          class="list-disc list-inside text-gray-600 space-y-1"
-        >
-          <li>
-            Main Hall Rental (Full Day)
-          </li>
-          <li>
-            Buffet Dinner (300 guests)
-          </li>
-          <li>
-            Premium Bridal + Groom Suites
-          </li>
-          <li>
-            Elaborate Stage & Floral Decoration
-          </li>
-          <li>
-            Full Sound & Light System
-          </li>
-          <li>
-            Live Music/Band Arrangement
-          </li>
-          <li>
-            Photography Coordination
-          </li>
-          <li>
-            Dedicated Event Manager
-          </li>
-          <li>
-            Parking (Unlimited)
-          </li>
-        </ul>
+          <div
+            class="h-48 flex items-center justify-center
+                  bg-gradient-to-br from-gray-900 to-black"
+          >
+            <div
+              class="text-center text-white"
+            >
+              <div
+                class="text-5xl mb-3"
+              >
+                ✨
+              </div>
+              <p
+                class="uppercase tracking-[3px] text-sm opacity-80"
+              >
+                Luxury
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-8"
+          >
+            <h3
+              class="text-2xl font-bold text-gray-900"
+            >
+              Wedding Diamond Package
+            </h3>
+            <div
+              class="mt-5 flex items-baseline gap-2"
+            >
+              <span
+                class="text-3xl font-bold text-[#7C3AED]"
+              >
+                ₹
+                45,000
+              </span>
+              <span
+                class="text-gray-500"
+              >
+                / package
+              </span>
+            </div>
+            <p
+              class="mt-5 text-gray-600 leading-7"
+            >
+              A luxury package with full-service arrangements for grand celebrations.
+            </p>
+            <div
+              class="mt-6 bg-purple-50 rounded-xl px-4 py-3"
+            >
+              <p
+                class="font-semibold text-purple-700"
+              >
+                👥 Capacity: 
+                500
+                 Guests
+              </p>
+            </div>
+            <div
+              class="mt-7"
+            >
+              <h4
+                class="font-bold text-gray-900 mb-4"
+              >
+                What's Included
+              </h4>
+              <ul
+                class="space-y-3"
+              >
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Main Hall Rental (Full Day)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Buffet Dinner (300 guests)
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Premium Bridal + Groom Suites
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Elaborate Stage & Floral Decoration
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Full Sound & Light System
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Live Music/Band Arrangement
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Photography Coordination
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Dedicated Event Manager
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3 text-gray-600"
+                >
+                  <span
+                    class="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xs font-bold mt-0.5"
+                  >
+                    ✓
+                  </span>
+                  <span>
+                    Parking (Unlimited)
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="block text-center mt-8 w-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white py-3.5 rounded-full font-semibold transition"
+              href="#enquiry-form"
+            >
+              Enquire Now
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
