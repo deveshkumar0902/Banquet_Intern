@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutUs from "./pages/AboutUs";
-import Services from "./pages/Services";
+
 import GalleryPage from "./pages/Gallery";
-import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 
 import Header from "./components/layout/Header";
@@ -14,15 +12,17 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <>
-      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+      <BrowserRouter
+        basename={import.meta.env.BASE_URL.replace(/\/$/, "")}
+      >
         <Header />
 
         <Routes>
+          {/* Main scrolling homepage */}
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
+
+          {/* Gallery remains the only separate page */}
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Footer />

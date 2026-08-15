@@ -67,14 +67,12 @@ exports[`Layout Components > matches Header snapshot 1`] = `
             Home
           </a>
           <a
-            data-discover="true"
-            href="/about"
+            href="#about"
           >
             About
           </a>
           <a
-            data-discover="true"
-            href="/services"
+            href="#services"
           >
             Services
           </a>
@@ -85,16 +83,14 @@ exports[`Layout Components > matches Header snapshot 1`] = `
             Gallery
           </a>
           <a
-            data-discover="true"
-            href="/contact"
+            href="#contact"
           >
             Contact
           </a>
         </div>
         <a
           class="rounded-full bg-[#7C3AED] px-6 py-3 text-white font-medium hover:bg-[#6D28D9] transition"
-          data-discover="true"
-          href="/contact"
+          href="#enquiry-form"
         >
           Enquire Now
         </a>

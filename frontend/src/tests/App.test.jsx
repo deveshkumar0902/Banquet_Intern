@@ -5,6 +5,8 @@ test("renders hero section", () => {
   render(<App />);
 
   expect(
-    screen.getByText("Celebrate", { exact: false })
+    screen.getByRole("heading", {
+      name: /celebrate.*your dream.*wedding/i,
+    })
   ).toBeInTheDocument();
 });
