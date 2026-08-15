@@ -2,23 +2,126 @@
 
 exports[`matches AboutUs snapshot 1`] = `
 <div>
-  <div
-    class="max-w-5xl mx-auto p-8"
+  <section
+    class="py-24 bg-white"
+    id="about"
   >
-    <h1
-      class="text-4xl font-bold mb-6 text-purple-700"
-    >
-      About Us
-    </h1>
     <div
-      class="bg-white p-6 rounded-lg shadow"
+      class="max-w-7xl mx-auto px-6"
     >
-      <p
-        class="text-lg text-gray-700 leading-relaxed"
+      <div
+        class="grid lg:grid-cols-2 gap-14 items-center"
       >
-        Royal Banquet Hall is a premium venue for weddings, birthdays, anniversaries, and corporate events. We provide elegant décor, spacious halls, quality catering, and exceptional customer service to make every event memorable.
-      </p>
+        <div>
+          <p
+            class="uppercase tracking-[4px] text-[#7C3AED] font-semibold"
+          >
+            About Us
+          </p>
+          <h2
+            class="text-4xl md:text-5xl font-bold text-gray-900 mt-3 leading-tight"
+          >
+            Creating Beautiful
+            <br />
+            Memories Together
+          </h2>
+          <p
+            class="mt-7 text-gray-600 text-lg leading-8"
+          >
+            Royal Banquet Hall is a premium venue for weddings, birthdays, anniversaries, and corporate events. We provide elegant décor, spacious halls, quality catering, and exceptional customer service to make every event memorable.
+          </p>
+          <div
+            class="grid grid-cols-2 gap-5 mt-8"
+          >
+            <div
+              class="flex items-center gap-3"
+            >
+              <span
+                class="text-[#7C3AED] text-xl"
+              >
+                ✓
+              </span>
+              <span
+                class="text-gray-700 font-medium"
+              >
+                Elegant Décor
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-3"
+            >
+              <span
+                class="text-[#7C3AED] text-xl"
+              >
+                ✓
+              </span>
+              <span
+                class="text-gray-700 font-medium"
+              >
+                Spacious Halls
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-3"
+            >
+              <span
+                class="text-[#7C3AED] text-xl"
+              >
+                ✓
+              </span>
+              <span
+                class="text-gray-700 font-medium"
+              >
+                Quality Catering
+              </span>
+            </div>
+            <div
+              class="flex items-center gap-3"
+            >
+              <span
+                class="text-[#7C3AED] text-xl"
+              >
+                ✓
+              </span>
+              <span
+                class="text-gray-700 font-medium"
+              >
+                Exceptional Service
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative"
+        >
+          <div
+            class="bg-[#7C3AED] rounded-3xl p-2 shadow-2xl"
+          >
+            <div
+              class="bg-white rounded-2xl p-10 md:p-12"
+            >
+              <div
+                class="text-6xl mb-6"
+              >
+                🏛️
+              </div>
+              <h3
+                class="text-3xl font-bold text-gray-900"
+              >
+                Your Celebration,
+                <br />
+                Our Responsibility
+              </h3>
+              <p
+                class="mt-5 text-gray-600 leading-7"
+              >
+                From intimate gatherings to grand celebrations, we work to make every occasion comfortable, elegant and memorable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

@@ -1,22 +1,34 @@
 import Hero from "../components/Hero";
-import EnquiryForm from "../components/EnquiryForm";
 import VenueShowcase from "../components/VenueShowcase";
 import Packages from "../components/Packages";
 import Testimonials from "../components/Testimonials";
 import EventStats from "../components/EventStats";
 import FAQAccordion from "../components/FAQAccordion";
-import AboutSection from "../components/AboutSection";
+
+import AboutUs from "./AboutUs";
+import Services from "./Services";
+import Contact from "./Contact";
 
 function Home() {
   return (
     <>
       <Hero />
-      <AboutSection />
+
+      <AboutUs />
+
       <VenueShowcase />
+
       <Packages />
+
+      <Services />
+
       <Testimonials />
+
       <EventStats />
+
       <FAQAccordion />
+
+      <Contact />
     </>
   );
 }
