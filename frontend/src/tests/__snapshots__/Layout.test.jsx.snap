@@ -1,46 +1,166 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Layout Components > matches Container snapshot 1`] = `
-<DocumentFragment>
+<div>
   <div
     class="max-w-7xl mx-auto px-6"
   >
-    <p>
+    <div>
       Test Content
-    </p>
+    </div>
   </div>
-</DocumentFragment>
+</div>
 `;
 
 exports[`Layout Components > matches Footer snapshot 1`] = `
-<DocumentFragment>
+<div>
   <footer
-    class="bg-gray-900 text-white"
+    class="bg-gray-950 text-white"
   >
     <div
       class="max-w-7xl mx-auto px-6"
     >
       <div
-        class="flex flex-col items-center justify-center py-8"
+        class="py-16"
       >
-        <h2
-          class="text-xl font-semibold"
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-4 gap-10"
         >
-          Royal Banquet Hall
-        </h2>
-        <p
-          class="mt-2 text-sm text-gray-300"
+          <div
+            class="lg:col-span-2"
+          >
+            <a
+              class="text-2xl font-bold text-white"
+              data-discover="true"
+              href="/"
+            >
+              Royal Banquet Hall
+            </a>
+            <p
+              class="mt-5 text-gray-400 leading-7 max-w-md"
+            >
+              Creating beautiful memories with elegant venues, exceptional service and unforgettable celebrations. Let us make your special occasion truly memorable.
+            </p>
+            <a
+              class="inline-block mt-6 bg-[#7C3AED] hover:bg-[#6D28D9] px-6 py-3 rounded-full font-semibold transition"
+              href="#enquiry-form"
+            >
+              Enquire Now
+            </a>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-semibold mb-5"
+            >
+              Quick Links
+            </h3>
+            <div
+              class="space-y-3"
+            >
+              <a
+                class="block text-gray-400 hover:text-white transition"
+                data-discover="true"
+                href="/"
+              >
+                Home
+              </a>
+              <a
+                class="block text-gray-400 hover:text-white transition"
+                href="#about"
+              >
+                About Us
+              </a>
+              <a
+                class="block text-gray-400 hover:text-white transition"
+                href="#services"
+              >
+                Services
+              </a>
+              <a
+                class="block text-gray-400 hover:text-white transition"
+                data-discover="true"
+                href="/gallery"
+              >
+                Gallery
+              </a>
+              <a
+                class="block text-gray-400 hover:text-white transition"
+                href="#contact"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-semibold mb-5"
+            >
+              Contact Us
+            </h3>
+            <div
+              class="space-y-4 text-gray-400"
+            >
+              <p
+                class="flex gap-3"
+              >
+                <span>
+                  📍
+                </span>
+                <span>
+                  Royal Banquet Hall,
+                  <br />
+                  New Delhi
+                </span>
+              </p>
+              <p
+                class="flex gap-3"
+              >
+                <span>
+                  📞
+                </span>
+                <span>
+                  +91 9876543210
+                </span>
+              </p>
+              <p
+                class="flex gap-3"
+              >
+                <span>
+                  ✉️
+                </span>
+                <span>
+                  info@royalbanquet.com
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-6"
         >
-          © 2026 Royal Banquet Hall. All Rights Reserved.
-        </p>
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-3"
+          >
+            <p
+              class="text-sm text-gray-500"
+            >
+              © 2026 Royal Banquet Hall. All Rights Reserved.
+            </p>
+            <p
+              class="text-sm text-gray-500"
+            >
+              Made for memorable celebrations.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
-</DocumentFragment>
+</div>
 `;
 
 exports[`Layout Components > matches Header snapshot 1`] = `
-<DocumentFragment>
+<div>
   <header
     class="sticky top-0 z-50 bg-white shadow-md"
   >
@@ -97,5 +217,5 @@ exports[`Layout Components > matches Header snapshot 1`] = `
       </nav>
     </div>
   </header>
-</DocumentFragment>
+</div>
 `;

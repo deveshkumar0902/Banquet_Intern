@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 
@@ -7,26 +6,33 @@ import Footer from "../components/layout/Footer";
 import Container from "../components/layout/Container";
 
 describe("Layout Components", () => {
-  it("matches Header snapshot", () => {
-    const { asFragment } = render(
+  test("matches Header snapshot", () => {
+    const { container } = render(
       <MemoryRouter>
         <Header />
       </MemoryRouter>
     );
-    expect(asFragment()).toMatchSnapshot();
+
+    expect(container).toMatchSnapshot();
   });
 
-  it("matches Footer snapshot", () => {
-    const { asFragment } = render(<Footer />);
-    expect(asFragment()).toMatchSnapshot();
+  test("matches Footer snapshot", () => {
+    const { container } = render(
+      <MemoryRouter>
+        <Footer />
+      </MemoryRouter>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 
-  it("matches Container snapshot", () => {
-    const { asFragment } = render(
+  test("matches Container snapshot", () => {
+    const { container } = render(
       <Container>
-        <p>Test Content</p>
+        <div>Test Content</div>
       </Container>
     );
-    expect(asFragment()).toMatchSnapshot();
+
+    expect(container).toMatchSnapshot();
   });
 });
