@@ -1,0 +1,10 @@
+Thanks for getting in touch, {{name}}
+
+We've received your message about "{{subjectLine}}" and will reply soon.
+
+Your message:
+{{message}}
+
+Warm regards,
+Team {{brandName}}
+{{brandContact}}

@@ -1,0 +1,15 @@
+Thank you, {{name}}!
+
+We've received your enquiry:
+
+Event:   {{eventType}}
+Date:    {{eventDate}}
+Guests:  {{guests}}
+Venue:   {{venue}}
+Message: {{message}}
+
+Our team will call you on {{phone}} within 24 hours to check availability and talk through your plans.
+
+Warm regards,
+Team {{brandName}}
+{{brandContact}}

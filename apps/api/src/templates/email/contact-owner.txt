@@ -1,0 +1,8 @@
+New message #{{id}}: {{subjectLine}}
+
+Name:     {{name}}
+Phone:    {{phone}}  ({{phoneHref}})
+WhatsApp: {{whatsappHref}}
+Email:    {{email}}
+
+{{message}}
