@@ -23,6 +23,7 @@ export const optionalEmailField = z.preprocess(
 export const requiredEmailField = z
   .string({ error: 'Please enter your email address' })
   .trim()
+  .min(1, 'Please enter your email address')
   .pipe(z.email('Please enter a valid email address'));
 
 /** @param {number} max */
