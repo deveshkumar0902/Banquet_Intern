@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "About Us",
+    "subtitle": "Where every celebration feels like home."
+  },
+  "story": {
+    "title": "Our story",
+    "paragraphs": [
+      "Dev Marriage Hall began with a simple idea: families deserve a beautiful, comfortable place to celebrate their most important moments together.",
+      "Since then we have hosted weddings, receptions, birthdays, anniversaries and community functions. Each one has left us with new stories, new smiles and relationships that have become part of who we are.",
+      "We are proud of our halls, but we are prouder of the trust families place in us. These occasions matter, so our team stays close to every client, from the first phone call to the last goodbye.",
+      "Our goal hasn't changed: a space where you can celebrate without stress and leave with memories you'll keep for years."
+    ],
+    "image": "venues/elegance-hall-mirrored-interior.jpg",
+    "imageAlt": "Ornate hall with mirrored doors, gilded panels and a crystal chandelier"
+  },
+  "highlights": [
+    "Spacious halls for intimate gatherings and large celebrations",
+    "Elegant interiors that make every setup look special",
+    "Flexible layouts planned around your event",
+    "A dedicated coordinator on the day",
+    "Ample parking for guests",
+    "Catering and décor support",
+    "Clean, well-kept, guest-friendly facilities",
+    "Easy to reach, with convenient access"
+  ],
+  "values": [
+    {
+      "title": "Treat every event as our own",
+      "body": "We plan and host your celebration with the same care we'd want for our own family."
+    },
+    {
+      "title": "Honest and clear",
+      "body": "Straight answers on what's included and what it costs. No surprises on the day."
+    },
+    {
+      "title": "Calm on the day",
+      "body": "Our team handles the setup, timings and vendors so you can be present with your guests."
+    }
+  ],
+  "teamNote": "Behind every event is a small, experienced team of coordinators, decorators and hospitality staff who have worked together for years. TODO(owner): add a line about the founder or team."
+}

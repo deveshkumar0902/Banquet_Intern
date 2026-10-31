@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "grand-ballroom",
+    "name": "Grand Ballroom",
+    "type": "indoor",
+    "capacity": {
+      "seated": 500,
+      "floating": null
+    },
+    "area": "TODO(owner): area in sq ft",
+    "summary": "Our largest indoor hall, made for grand weddings, receptions and big corporate evenings.",
+    "description": "The Grand Ballroom pairs a built-in stage with chandeliers, a high ceiling and full air-conditioning. It works just as well for a 500-guest reception dinner as for an awards night, with plenty of room for buffet counters, a dance floor and a photo corner.",
+    "features": [
+      "Centrally air-conditioned",
+      "Built-in stage",
+      "Sound and lighting system",
+      "Bride and groom changing rooms",
+      "Space for buffet counters"
+    ],
+    "idealFor": ["Wedding", "Reception", "Corporate Event"],
+    "images": ["venues/grand-ballroom-round-tables.jpg", "gallery/banquet-dining-setup.jpg"],
+    "imageAlts": [
+      "Grand Ballroom set with round tables under crystal chandeliers",
+      "Long dining setup on a blue and gold patterned carpet"
+    ],
+    "capacityNote": "TODO(owner): confirm seated and floating capacity"
+  },
+  {
+    "slug": "garden-lawn",
+    "name": "Garden Lawn",
+    "type": "lawn",
+    "capacity": {
+      "seated": null,
+      "floating": 800
+    },
+    "area": "TODO(owner): area in sq ft",
+    "summary": "An open-air lawn for winter weddings, evening receptions and festive gatherings.",
+    "description": "The Garden Lawn gives you a green, open setting under the sky, with room for a mandap, a stage, live food counters and a separate entry for guests. Canopies can be arranged for shade or the occasional winter shower.",
+    "features": [
+      "Lush green lawn",
+      "Canopy options",
+      "Room for live food counters",
+      "Dedicated entry gate"
+    ],
+    "idealFor": ["Wedding", "Haldi / Mehendi / Sangeet", "Reception"],
+    "images": [],
+    "imageAlts": [],
+    "capacityNote": "TODO(owner): confirm seated and floating capacity"
+  },
+  {
+    "slug": "elegance-hall",
+    "name": "Elegance Hall",
+    "type": "indoor",
+    "capacity": {
+      "seated": 150,
+      "floating": null
+    },
+    "area": "TODO(owner): area in sq ft",
+    "summary": "An intimate hall for engagements, ring ceremonies, birthdays and meetings.",
+    "description": "Elegance Hall is a smaller, beautifully finished space with mirrored panels and chandeliers. Its flexible layout suits a ring ceremony with close family, a birthday dinner or a half-day business meeting with a projector.",
+    "features": [
+      "Air-conditioned",
+      "Flexible seating layouts",
+      "Projector and audio-visual system",
+      "Attached dining area"
+    ],
+    "idealFor": ["Engagement / Ring Ceremony", "Birthday", "Corporate Event"],
+    "images": ["venues/elegance-hall-mirrored-interior.jpg"],
+    "imageAlts": ["Elegance Hall with mirrored doors, gilded walls and a chandelier"],
+    "capacityNote": "TODO(owner): confirm seated and floating capacity"
+  }
+]

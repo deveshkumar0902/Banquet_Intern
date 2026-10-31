@@ -1,0 +1,51 @@
+[
+  {
+    "id": "capacity",
+    "category": "Venue",
+    "question": "How many guests can you accommodate?",
+    "answer": "Our largest hall seats up to 500 guests, the Garden Lawn hosts up to 800, and Elegance Hall suits up to 150. Tell us your guest count and we'll suggest the best fit.",
+    "top": true
+  },
+  {
+    "id": "catering",
+    "category": "Food & Décor",
+    "question": "Do you provide catering?",
+    "answer": "Yes. Our catering partners offer vegetarian, non-vegetarian and Jain menus, and we can customise the menu to your preferences and budget.",
+    "top": true
+  },
+  {
+    "id": "parking",
+    "category": "Venue",
+    "question": "Is there parking for guests?",
+    "answer": "Yes, there is ample parking on site. Valet service can be arranged on request.",
+    "top": true
+  },
+  {
+    "id": "decor",
+    "category": "Food & Décor",
+    "question": "Can we decorate the hall to our own theme?",
+    "answer": "Absolutely. You can bring your own decorator or use ours, and our team will help with setup and vendor recommendations.",
+    "top": true
+  },
+  {
+    "id": "visit",
+    "category": "Booking",
+    "question": "Can we visit the venue before booking?",
+    "answer": "Of course. Send an enquiry or call us to fix a time, and a coordinator will show you around and talk through your plans.",
+    "top": true
+  },
+  {
+    "id": "cancellation",
+    "category": "Booking",
+    "question": "What is your cancellation policy?",
+    "answer": "Cancellations made at least 30 days before the event receive a full refund. Cancellations within 30 days may carry a partial fee. We'll share the full terms with your booking.",
+    "top": false
+  },
+  {
+    "id": "pricing",
+    "category": "Booking",
+    "question": "How is pricing worked out?",
+    "answer": "Pricing depends on the date, the hall, your guest count, menu and décor. Share your requirements and we'll send a clear, itemised quote.",
+    "top": false
+  }
+]

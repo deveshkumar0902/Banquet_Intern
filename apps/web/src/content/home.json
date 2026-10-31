@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "eyebrow": "Banquet Hall & Wedding Venue",
+    "title": "Celebrations that feel like home",
+    "subtitle": "Elegant halls, a garden lawn and a team that takes care of the details, so you can enjoy every moment with the people you love.",
+    "image": "hero/banquet-hall-arches.jpg",
+    "imageAlt": "Banquet hall with arched ceilings, chandeliers and a patterned carpet",
+    "primaryCta": { "text": "Explore Venues", "href": "/venues" },
+    "formTitle": "Check availability",
+    "formSubtitle": "Tell us about your event and we'll call you within 24 hours."
+  },
+  "intro": {
+    "eyebrow": "Welcome",
+    "title": "A warm venue for life's biggest days",
+    "body": "For years, families have trusted Dev Marriage Hall with weddings, receptions, engagements and milestone birthdays. We bring the space, the setup and a calm, experienced team, and you bring the people and the memories.",
+    "image": "venues/grand-ballroom-round-tables.jpg",
+    "imageAlt": "Round dining tables with white linen under crystal chandeliers",
+    "cta": { "text": "Read our story", "href": "/about" }
+  }
+}

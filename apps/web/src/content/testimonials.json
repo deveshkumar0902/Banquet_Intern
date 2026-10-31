@@ -1,0 +1,29 @@
+[
+  {
+    "id": "t1",
+    "name": "Neha & Arjun Sharma",
+    "eventType": "Wedding Reception",
+    "eventDate": "November 2025",
+    "rating": 5,
+    "quote": "Our wedding reception was perfect. The staff were incredibly supportive from start to finish.",
+    "verified": false
+  },
+  {
+    "id": "t2",
+    "name": "Vikram Mehta",
+    "eventType": "Corporate Annual Gala",
+    "eventDate": "March 2026",
+    "rating": 5,
+    "quote": "Professional staff and clean, spacious facilities. The AV setup and buffet service were flawless.",
+    "verified": false
+  },
+  {
+    "id": "t3",
+    "name": "Ritu & Rajesh Verma",
+    "eventType": "Engagement Ceremony",
+    "eventDate": "January 2026",
+    "rating": 5,
+    "quote": "An elegant, welcoming space. Just right for our daughter's ring ceremony.",
+    "verified": false
+  }
+]

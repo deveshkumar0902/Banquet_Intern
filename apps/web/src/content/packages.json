@@ -1,0 +1,72 @@
+{
+  "disclaimer": "Final pricing depends on date, guest count, menu and décor. We'll share a detailed quote after understanding your requirements.",
+  "items": [
+    {
+      "id": "wedding",
+      "title": "Wedding Celebration Package",
+      "tagline": "A complete venue solution for weddings and receptions, designed to make your special day smooth and stress-free.",
+      "inclusions": [
+        "Spacious banquet hall",
+        "Stage setup",
+        "Guest seating arrangements",
+        "Decoration support",
+        "Catering coordination",
+        "Sound and lighting setup",
+        "Dedicated event assistance",
+        "Parking facilities"
+      ],
+      "pricing": "Contact us for a customized quotation based on guest count and event requirements.",
+      "ctaText": "Get a Custom Quote",
+      "eventType": "Wedding",
+      "highlight": true
+    },
+    {
+      "id": "engagement",
+      "title": "Engagement & Ring Ceremony Package",
+      "tagline": "Perfect for intimate celebrations with family and close friends.",
+      "inclusions": [
+        "Decorated ceremony area",
+        "Seating arrangements",
+        "Lighting setup",
+        "Photography-friendly backdrop",
+        "Catering support",
+        "Event coordination"
+      ],
+      "pricing": "Contact us for a personalized quote.",
+      "ctaText": "Get a Custom Quote",
+      "eventType": "Engagement / Ring Ceremony"
+    },
+    {
+      "id": "birthday-anniversary",
+      "title": "Birthday & Anniversary Package",
+      "tagline": "Celebrate milestones in style with customized arrangements and a vibrant atmosphere.",
+      "inclusions": [
+        "Theme-based decoration options",
+        "Stage and cake area setup",
+        "Music and entertainment arrangements",
+        "Guest seating",
+        "Catering support",
+        "Event assistance"
+      ],
+      "pricing": "Packages available based on event size.",
+      "ctaText": "Get a Custom Quote",
+      "eventType": "Birthday"
+    },
+    {
+      "id": "corporate",
+      "title": "Corporate Event Package",
+      "tagline": "Professional venue arrangements for meetings, conferences, and business gatherings.",
+      "inclusions": [
+        "Conference-style seating",
+        "Audio system support",
+        "Presentation area",
+        "Refreshment and catering options",
+        "Dedicated event management support",
+        "Parking facilities"
+      ],
+      "pricing": "Contact us for corporate pricing.",
+      "ctaText": "Get a Custom Quote",
+      "eventType": "Corporate Event"
+    }
+  ]
+}

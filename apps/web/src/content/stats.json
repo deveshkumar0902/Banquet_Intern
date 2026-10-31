@@ -1,0 +1,6 @@
+[
+  { "id": "events", "label": "Events hosted", "value": 500, "suffix": "+", "verified": false },
+  { "id": "weddings", "label": "Weddings", "value": 300, "suffix": "+", "verified": false },
+  { "id": "guests", "label": "Guests welcomed", "value": 25000, "suffix": "+", "verified": false },
+  { "id": "years", "label": "Years of hosting", "value": 15, "suffix": "", "verified": false }
+]

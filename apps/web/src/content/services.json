@@ -1,0 +1,56 @@
+[
+  {
+    "id": "weddings",
+    "title": "Weddings",
+    "icon": "Heart",
+    "eventType": "Wedding",
+    "summary": "From the baraat to the vidaai, a venue and team ready for the biggest day of your life.",
+    "body": "Choose the Grand Ballroom or the Garden Lawn, then plan the stage, décor, seating and catering with our coordinators. We work with your family's traditions and timings, and keep everything running on the day.",
+    "image": "venues/grand-ballroom-round-tables.jpg"
+  },
+  {
+    "id": "receptions",
+    "title": "Receptions",
+    "icon": "Sparkles",
+    "eventType": "Reception",
+    "summary": "An elegant evening to welcome the newlyweds, with room for dinner and dancing.",
+    "body": "Grand entries, a beautifully lit stage, buffet or plated dinner and a dance floor: we set the scene so your guests remember the night.",
+    "image": "gallery/banquet-dining-setup.jpg"
+  },
+  {
+    "id": "engagements",
+    "title": "Engagement & Ring Ceremony",
+    "icon": "Gem",
+    "eventType": "Engagement / Ring Ceremony",
+    "summary": "Intimate celebrations with family and close friends.",
+    "body": "Elegance Hall is made for ring ceremonies: a decorated ceremony area, a photo-friendly backdrop and catering sized for a close gathering.",
+    "image": "venues/elegance-hall-mirrored-interior.jpg"
+  },
+  {
+    "id": "pre-wedding",
+    "title": "Haldi, Mehendi & Sangeet",
+    "icon": "Music",
+    "eventType": "Haldi / Mehendi / Sangeet",
+    "summary": "Colourful, joyful functions with music, dance and family.",
+    "body": "Bright décor, seating for elders, a stage for performances and space for the mehendi artists. The lawn is especially lovely for daytime haldi.",
+    "image": "hero/banquet-hall-arches.jpg"
+  },
+  {
+    "id": "birthdays",
+    "title": "Birthdays & Anniversaries",
+    "icon": "Cake",
+    "eventType": "Birthday",
+    "summary": "Milestones celebrated in style, for every age.",
+    "body": "Theme décor, a stage and cake table, music and catering, all arranged for the number of guests you're expecting.",
+    "image": "venues/elegance-hall-mirrored-interior.jpg"
+  },
+  {
+    "id": "corporate",
+    "title": "Corporate Events",
+    "icon": "Briefcase",
+    "eventType": "Corporate Event",
+    "summary": "Meetings, conferences, launches and annual dinners.",
+    "body": "Conference or theatre seating, audio and projection, refreshments and parking, with a coordinator who keeps your agenda on time.",
+    "image": "gallery/banquet-dining-setup.jpg"
+  }
+]
