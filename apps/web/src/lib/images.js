@@ -3,7 +3,7 @@
 const modules = import.meta.glob('../assets/images/**/*.{jpg,jpeg,png}', {
   eager: true,
   import: 'default',
-  query: { w: '480;960;1600', format: 'webp;jpg', quality: '72', as: 'picture' },
+  query: { w: '480;960;1600', format: 'webp;jpg', quality: '66', as: 'picture' },
 });
 
 /** @type {Record<string, { sources: Record<string, string>, img: { src: string, w: number, h: number } }>} */
