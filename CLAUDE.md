@@ -23,6 +23,13 @@ Banquet / wedding venue website for **Dev Marriage Hall**. npm workspaces monore
 - `npm run dev`: api on :4000 + web on :5173 (Vite proxies `/api`)
 - `npm test`, `npm run test:e2e`, `npm run lint`, `npm run format`, `npm run build`
 - `npm run check`: lint + format check + unit tests + build (what CI runs before e2e)
+- `npm run test:e2e`: Playwright + axe; starts its own api (in-memory DB) and web servers, but reuses anything already on :4000/:5173
+- `npm run export -w apps/api -- --type enquiries`: Excel export from the local database
+
+## Docs
+
+`docs/ARCHITECTURE.md` (how to add a page / venue / form field), `docs/API.md`, `docs/CONTENT.md`, `docs/TESTING.md`,
+`docs/DEPLOYMENT.md`, `docs/DESIGN.md` (tokens + reference analysis), `docs/REBUILD_PLAN.md`, `docs/REBUILD_REPORT.md`.
 
 ## Conventions
 
