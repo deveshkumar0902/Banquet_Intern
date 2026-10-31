@@ -2,6 +2,7 @@
 // Captures screenshots, a structural outline and sampled styles of the UI reference site.
 // Output goes to docs/reference/ (gitignored). Inspiration only: nothing here is shipped.
 // Run: node scripts/capture-reference.mjs
+/* global document, window, getComputedStyle */ // used inside page.evaluate callbacks
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -44,9 +45,9 @@ function collectOutline() {
       ),
     ),
     footerHeadings: uniq(
-      [...document.querySelectorAll('footer h2, footer h3, footer h4, footer h5, footer strong')].map(
-        text,
-      ),
+      [
+        ...document.querySelectorAll('footer h2, footer h3, footer h4, footer h5, footer strong'),
+      ].map(text),
     ),
   };
 }
@@ -67,16 +68,9 @@ function collectStyles() {
       borderRadius: s.borderRadius,
     };
   };
-  return [
-    'body',
-    'h1',
-    'h2',
-    'h3',
-    'nav a',
-    'header',
-    'a[class*="btn"], button',
-    'footer',
-  ].map(pick);
+  return ['body', 'h1', 'h2', 'h3', 'nav a', 'header', 'a[class*="btn"], button', 'footer'].map(
+    pick,
+  );
 }
 
 const browser = await chromium.launch();

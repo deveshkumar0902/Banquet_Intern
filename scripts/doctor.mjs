@@ -12,7 +12,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const results = [];
 const add = (status, name, detail = '') => results.push({ status, name, detail });
 const sh = (cmd) =>
-  execSync(cmd, { cwd: root, stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
+  execSync(cmd, { cwd: root, stdio: ['ignore', 'pipe', 'pipe'] })
+    .toString()
+    .trim();
 const major = (v) => Number(String(v).replace(/^v/, '').split('.')[0]);
 
 // ---------- 1. Toolchain ----------
@@ -32,19 +34,61 @@ try {
 
 // ---------- 2. Required packages per workspace ----------
 const REQUIRED = {
-  '.': ['eslint', '@eslint/js', 'globals', 'eslint-plugin-react', 'eslint-plugin-react-hooks',
-    'eslint-plugin-react-refresh', 'eslint-config-prettier', 'prettier', 'concurrently',
-    '@playwright/test', '@axe-core/playwright'],
+  '.': [
+    'eslint',
+    '@eslint/js',
+    'globals',
+    'eslint-plugin-react',
+    'eslint-plugin-react-hooks',
+    'eslint-plugin-react-refresh',
+    'eslint-config-prettier',
+    'prettier',
+    'concurrently',
+    '@playwright/test',
+    '@axe-core/playwright',
+  ],
   'packages/shared': ['zod'],
-  'apps/web': ['react', 'react-dom', 'react-router', 'react-hook-form', '@hookform/resolvers',
-    'zod', 'embla-carousel-react', 'yet-another-react-lightbox', 'lucide-react', 'sonner',
-    '@fontsource-variable/merriweather', '@fontsource/poppins', '@banquet/shared',
-    'vite', '@vitejs/plugin-react', 'tailwindcss', '@tailwindcss/vite', 'vite-imagetools',
-    'vitest', 'jsdom', '@testing-library/react', '@testing-library/jest-dom',
-    '@testing-library/user-event'],
-  'apps/api': ['express', 'cors', 'helmet', 'express-rate-limit', 'zod', 'better-sqlite3',
-    'nodemailer', 'exceljs', 'pino', 'pino-http', 'dotenv', '@banquet/shared', 'vitest',
-    'supertest'],
+  'apps/web': [
+    'react',
+    'react-dom',
+    'react-router',
+    'react-hook-form',
+    '@hookform/resolvers',
+    'zod',
+    'embla-carousel-react',
+    'yet-another-react-lightbox',
+    'lucide-react',
+    'sonner',
+    '@fontsource-variable/merriweather',
+    '@fontsource/poppins',
+    '@banquet/shared',
+    'vite',
+    '@vitejs/plugin-react',
+    'tailwindcss',
+    '@tailwindcss/vite',
+    'vite-imagetools',
+    'vitest',
+    'jsdom',
+    '@testing-library/react',
+    '@testing-library/jest-dom',
+    '@testing-library/user-event',
+  ],
+  'apps/api': [
+    'express',
+    'cors',
+    'helmet',
+    'express-rate-limit',
+    'zod',
+    'better-sqlite3',
+    'nodemailer',
+    'exceljs',
+    'pino',
+    'pino-http',
+    'dotenv',
+    '@banquet/shared',
+    'vitest',
+    'supertest',
+  ],
 };
 
 // Walk up from the workspace dir to the repo root looking in node_modules (handles hoisting).
@@ -64,8 +108,11 @@ for (const [ws, pkgs] of Object.entries(REQUIRED)) {
     continue;
   }
   const missing = pkgs.filter((p) => !isInstalled(wsDir, p));
-  add(missing.length ? 'FAIL' : 'PASS', `deps: ${ws}`,
-    missing.length ? `missing → ${missing.join(', ')}` : `${pkgs.length} packages present`);
+  add(
+    missing.length ? 'FAIL' : 'PASS',
+    `deps: ${ws}`,
+    missing.length ? `missing → ${missing.join(', ')}` : `${pkgs.length} packages present`,
+  );
 }
 
 // npm's own consistency check (missing/invalid peers). Informational.
@@ -84,32 +131,52 @@ try {
   new Database(':memory:').close();
   add('PASS', 'better-sqlite3 native binding');
 } catch (e) {
-  add('FAIL', 'better-sqlite3 native binding',
-    `${String(e.message).split('\n')[0]} → try: npm rebuild better-sqlite3 -w apps/api`);
+  add(
+    'FAIL',
+    'better-sqlite3 native binding',
+    `${String(e.message).split('\n')[0]} → try: npm rebuild better-sqlite3 -w apps/api`,
+  );
 }
 try {
   const req = createRequire(path.join(root, 'package.json'));
   const { chromium } = req('@playwright/test');
   const exe = chromium.executablePath();
-  add(existsSync(exe) ? 'PASS' : 'FAIL', 'Playwright Chromium',
-    existsSync(exe) ? '' : 'run: npx playwright install chromium');
+  add(
+    existsSync(exe) ? 'PASS' : 'FAIL',
+    'Playwright Chromium',
+    existsSync(exe) ? '' : 'run: npx playwright install chromium',
+  );
 } catch (e) {
   add('FAIL', 'Playwright Chromium', String(e.message).split('\n')[0]);
 }
 
 // ---------- 4. Environment files ----------
-add(existsSync(path.join(root, 'apps/api/.env')) ? 'PASS' : 'WARN', 'apps/api/.env',
-  existsSync(path.join(root, 'apps/api/.env')) ? '' : 'not found: dev uses defaults + console email');
-add(existsSync(path.join(root, 'apps/api/.env.example')) ? 'PASS' : 'WARN', 'apps/api/.env.example');
-add(existsSync(path.join(root, 'apps/web/.env.example')) ? 'PASS' : 'WARN', 'apps/web/.env.example');
+add(
+  existsSync(path.join(root, 'apps/api/.env')) ? 'PASS' : 'WARN',
+  'apps/api/.env',
+  existsSync(path.join(root, 'apps/api/.env'))
+    ? ''
+    : 'not found: dev uses defaults + console email',
+);
+add(
+  existsSync(path.join(root, 'apps/api/.env.example')) ? 'PASS' : 'WARN',
+  'apps/api/.env.example',
+);
+add(
+  existsSync(path.join(root, 'apps/web/.env.example')) ? 'PASS' : 'WARN',
+  'apps/web/.env.example',
+);
 
 // ---------- 5. Repo hygiene ----------
 try {
   const bad = sh('git ls-files')
     .split('\n')
     .filter((f) => /(^|\/)node_modules\/|(^|\/)\.env$|\.(db|sqlite|xlsx)$/.test(f));
-  add(bad.length ? 'FAIL' : 'PASS', 'no tracked node_modules/.env/db/xlsx',
-    bad.length ? `${bad.length} file(s), e.g. ${bad[0]}` : '');
+  add(
+    bad.length ? 'FAIL' : 'PASS',
+    'no tracked node_modules/.env/db/xlsx',
+    bad.length ? `${bad.length} file(s), e.g. ${bad[0]}` : '',
+  );
 } catch {
   add('WARN', 'git ls-files', 'not a git repo?');
 }
@@ -130,5 +197,7 @@ for (const p of [5173, 4000]) {
 console.log('\nBanquet site: doctor\n');
 for (const r of results) console.log(`${r.status.padEnd(5)} ${r.name.padEnd(42)} ${r.detail}`);
 const failed = results.filter((r) => r.status === 'FAIL').length;
-console.log(failed ? `\n❌ ${failed} required check(s) failed\n` : '\n✅ all required checks passed\n');
+console.log(
+  failed ? `\n❌ ${failed} required check(s) failed\n` : '\n✅ all required checks passed\n',
+);
 process.exit(failed ? 1 : 0);

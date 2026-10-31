@@ -3,7 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "export": "node scripts/export.mjs",
+    "import:legacy": "node scripts/import-legacy-xlsx.mjs"
+  },
   "dependencies": {
     "@banquet/shared": "*",
     "better-sqlite3": "^13.0.3",
