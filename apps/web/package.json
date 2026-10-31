@@ -1,0 +1,34 @@
+{
+  "name": "@banquet/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@banquet/shared": "*",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/playfair-display": "^5.3.0",
+    "@hookform/resolvers": "^7.0.0",
+    "embla-carousel-react": "^8.6.0",
+    "lucide-react": "^1.66.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-hook-form": "^7.91.0",
+    "react-router": "^8.5.1",
+    "sonner": "^2.0.8",
+    "yet-another-react-lightbox": "^3.33.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^30.1.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.5",
+    "vite-imagetools": "^12.0.1",
+    "vitest": "^5.0.5"
+  }
+}
