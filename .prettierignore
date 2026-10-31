@@ -5,3 +5,4 @@ test-results
 docs/reference
 **/data
 package-lock.json
+.claude
