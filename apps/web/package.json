@@ -6,8 +6,8 @@
   "scripts": {},
   "dependencies": {
     "@banquet/shared": "*",
-    "@fontsource-variable/inter": "^5.3.0",
-    "@fontsource-variable/playfair-display": "^5.3.0",
+    "@fontsource-variable/merriweather": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
     "@hookform/resolvers": "^7.0.0",
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^1.66.0",

@@ -38,7 +38,7 @@ const REQUIRED = {
   'packages/shared': ['zod'],
   'apps/web': ['react', 'react-dom', 'react-router', 'react-hook-form', '@hookform/resolvers',
     'zod', 'embla-carousel-react', 'yet-another-react-lightbox', 'lucide-react', 'sonner',
-    '@fontsource-variable/inter', '@fontsource-variable/playfair-display', '@banquet/shared',
+    '@fontsource-variable/merriweather', '@fontsource/poppins', '@banquet/shared',
     'vite', '@vitejs/plugin-react', 'tailwindcss', '@tailwindcss/vite', 'vite-imagetools',
     'vitest', 'jsdom', '@testing-library/react', '@testing-library/jest-dom',
     '@testing-library/user-event'],
