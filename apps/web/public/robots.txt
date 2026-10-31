@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# The sitemap URL is added at build time by scripts/postbuild.mjs

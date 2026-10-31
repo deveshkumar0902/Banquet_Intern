@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/merriweather/index.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+
+/* Design tokens: see docs/DESIGN.md for where each value comes from and its contrast ratio. */
+@theme {
+  --color-cream-50: #fcf8f3;
+  --color-cream-100: #f6ede2;
+  --color-cream-200: #eadbc8;
+  --color-clay-500: #b05932; /* large headings & decoration only */
+  --color-clay-600: #a04e2a; /* primary */
+  --color-clay-700: #7e3a1b;
+  --color-clay-900: #3b1d10;
+  --color-gold-400: #e7c78a; /* text on dark backgrounds */
+  --color-gold-500: #c9a25e; /* decorative lines only */
+  --color-ink-900: #2a211c;
+  --color-ink-600: #5e544d;
+
+  --font-display: 'Merriweather Variable', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-card: 1rem;
+  --shadow-card: 0 10px 30px -12px rgb(59 29 16 / 0.25);
+  --shadow-lift: 0 18px 40px -14px rgb(59 29 16 / 0.35);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-cream-50 font-sans text-ink-900 antialiased;
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-balance;
+    line-height: 1.25;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-clay-600);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  /* Programmatic focus targets (skip link, #hash sections) don't need a ring */
+  [tabindex='-1']:focus {
+    outline: none;
+  }
+  .on-dark :focus-visible,
+  .on-dark:focus-visible {
+    outline-color: var(--color-gold-400);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  /* Anchor targets clear the fixed header */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-sm font-semibold tracking-[0.18em] uppercase;
+  }
+  .lift {
+    @apply transition duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[var(--shadow-lift)];
+  }
+}
